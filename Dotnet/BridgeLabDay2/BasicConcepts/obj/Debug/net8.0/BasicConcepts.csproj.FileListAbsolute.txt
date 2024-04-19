@@ -1,0 +1,14 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\bin\Debug\net8.0\BasicConcepts.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\bin\Debug\net8.0\BasicConcepts.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\bin\Debug\net8.0\BasicConcepts.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\bin\Debug\net8.0\BasicConcepts.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\bin\Debug\net8.0\BasicConcepts.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\obj\Debug\net8.0\BasicConcepts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\obj\Debug\net8.0\BasicConcepts.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\obj\Debug\net8.0\BasicConcepts.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\obj\Debug\net8.0\BasicConcepts.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\obj\Debug\net8.0\BasicConcepts.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\obj\Debug\net8.0\refint\BasicConcepts.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\obj\Debug\net8.0\BasicConcepts.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\obj\Debug\net8.0\BasicConcepts.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\obj\Debug\net8.0\ref\BasicConcepts.dll
