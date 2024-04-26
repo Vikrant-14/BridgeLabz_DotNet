@@ -12,3 +12,4 @@ C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\obj\D
 C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\obj\Debug\net8.0\BasicConcepts.pdb
 C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\obj\Debug\net8.0\BasicConcepts.genruntimeconfig.cache
 C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\obj\Debug\net8.0\ref\BasicConcepts.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay2\BasicConcepts\obj\Debug\net8.0\BasicConcepts.sourcelink.json

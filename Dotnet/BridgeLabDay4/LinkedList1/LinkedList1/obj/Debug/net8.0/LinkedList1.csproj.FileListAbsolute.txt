@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\bin\Debug\net8.0\LinkedList1.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\bin\Debug\net8.0\LinkedList1.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\bin\Debug\net8.0\LinkedList1.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\bin\Debug\net8.0\LinkedList1.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\bin\Debug\net8.0\LinkedList1.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\obj\Debug\net8.0\LinkedList1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\obj\Debug\net8.0\LinkedList1.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\obj\Debug\net8.0\LinkedList1.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\obj\Debug\net8.0\LinkedList1.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\obj\Debug\net8.0\LinkedList1.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\obj\Debug\net8.0\LinkedList1.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\obj\Debug\net8.0\refint\LinkedList1.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\obj\Debug\net8.0\LinkedList1.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\obj\Debug\net8.0\LinkedList1.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay4\LinkedList1\LinkedList1\obj\Debug\net8.0\ref\LinkedList1.dll

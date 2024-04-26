@@ -2,6 +2,12 @@
 
 namespace BasicClassConcpets
 {
+
+    class Class1
+    {
+        int i;
+        int y;
+    }
     class BasicConcept
     {
         int x; // instance variable
