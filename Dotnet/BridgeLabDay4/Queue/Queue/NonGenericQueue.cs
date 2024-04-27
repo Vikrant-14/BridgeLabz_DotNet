@@ -28,9 +28,9 @@ namespace QueueDemo
         public void PeekElement()
         {
             if (this.q.Count != 0)
-                Console.WriteLine($"Element At Top of Stack  : {this.q.Peek()}");
+                Console.WriteLine($"First Element in Queue  : {this.q.Peek()}");
             else
-                Console.WriteLine("Stack is Empty");
+                Console.WriteLine("Queue is Empty");
         }
 
         public void ClearQueue()
