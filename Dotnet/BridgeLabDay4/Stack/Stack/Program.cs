@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StackDemo1;
+using System;
 using System.Collections;
 class StackDemo 
 {
@@ -52,16 +53,15 @@ class StackDemo
         return choice;
     }
 
-    
-    static void Main() 
-    { 
+    public static void NonGeneric()
+    {
         StackDemo s1 = new StackDemo();
         s1.stack = new Stack();
 
         int choice = 0;
 
-        while((choice = MenuDriven()) != 0) 
-        { 
+        while ((choice = MenuDriven()) != 0)
+        {
             switch (choice)
             {
                 case 1:
@@ -81,9 +81,15 @@ class StackDemo
                     break;
 
                 case 5:
-                    s1.Display();       
+                    s1.Display();
                     break;
             }
         }
+    }
+    
+    static void Main() 
+    {
+        //NonGeneric();
+        StackGeneric.Generic();
     }
 }
