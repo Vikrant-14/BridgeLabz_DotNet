@@ -74,6 +74,7 @@ namespace SortedListDemo
 
             return choice;
         }
+
         public static void Generic()
         {
             GenericSortedList sl = new GenericSortedList();

@@ -71,6 +71,7 @@ namespace SortedListDemo
 
             return choice;
         }
+
         public static void NonGeneric()
         {
             NonGenericSortedList sl = new NonGenericSortedList();
