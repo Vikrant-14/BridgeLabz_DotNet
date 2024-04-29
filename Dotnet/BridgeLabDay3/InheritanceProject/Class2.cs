@@ -10,7 +10,7 @@ namespace Inheritance
     {
         public Class2(int a) : base(a)
         {
-            Console.WriteLine("Constructor of Class2 called. : " + a );
+            Console.WriteLine( "Constructor of Class2 called. : " + a );
         }
         public static void Main() { 
             Class2 class2 = new Class2(20);
