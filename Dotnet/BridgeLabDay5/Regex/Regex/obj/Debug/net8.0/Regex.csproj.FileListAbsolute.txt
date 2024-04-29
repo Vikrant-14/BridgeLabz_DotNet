@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\bin\Debug\net8.0\Regex.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\bin\Debug\net8.0\Regex.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\bin\Debug\net8.0\Regex.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\bin\Debug\net8.0\Regex.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\bin\Debug\net8.0\Regex.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\obj\Debug\net8.0\Regex.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\obj\Debug\net8.0\Regex.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\obj\Debug\net8.0\Regex.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\obj\Debug\net8.0\Regex.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\obj\Debug\net8.0\Regex.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\obj\Debug\net8.0\Regex.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\obj\Debug\net8.0\refint\Regex.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\obj\Debug\net8.0\Regex.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\obj\Debug\net8.0\Regex.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay5\Regex\Regex\obj\Debug\net8.0\ref\Regex.dll
