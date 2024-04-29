@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\bin\Debug\net8.0\InheritanceProject.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\bin\Debug\net8.0\InheritanceProject.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\bin\Debug\net8.0\InheritanceProject.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\bin\Debug\net8.0\InheritanceProject.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\bin\Debug\net8.0\InheritanceProject.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\obj\Debug\net8.0\InheritanceProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\obj\Debug\net8.0\InheritanceProject.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\obj\Debug\net8.0\InheritanceProject.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\obj\Debug\net8.0\InheritanceProject.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\obj\Debug\net8.0\InheritanceProject.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\obj\Debug\net8.0\InheritanceProject.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\obj\Debug\net8.0\refint\InheritanceProject.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\obj\Debug\net8.0\InheritanceProject.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\obj\Debug\net8.0\InheritanceProject.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay3\InheritanceProject\obj\Debug\net8.0\ref\InheritanceProject.dll
