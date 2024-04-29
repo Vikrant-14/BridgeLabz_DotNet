@@ -4,4 +4,5 @@ using System.Security.Cryptography;
 
 Console.WriteLine("SortedList Implementation.");
 
-NonGenericSortedList.NonGeneric();
+//NonGenericSortedList.NonGeneric();
+GenericSortedList.Generic();

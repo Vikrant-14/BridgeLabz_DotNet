@@ -1,23 +1,24 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SortedListDemo
 {
-    internal class NonGenericSortedList
+    internal class GenericSortedList
     {
-        SortedList sortedList;
+        SortedList<int,string> sortedList;
         public void AddElement()
         {
             Console.WriteLine("Add key : ");
-            int key = Convert.ToInt32(Console.ReadLine()); 
-            Console.WriteLine("Add Element : ");
-            int value = Convert.ToInt32(Console.ReadLine());
-            
-            if(!this.sortedList.ContainsKey(key)) 
+            int key = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Add String Value : ");
+            string value = Console.ReadLine();
+
+            if (!this.sortedList.ContainsKey(key))
             {
                 this.sortedList.Add(key, value);
                 Console.WriteLine("Element added Successfully.");
@@ -33,6 +34,8 @@ namespace SortedListDemo
             Console.WriteLine("Enter Key : ");
             int key = Convert.ToInt32(Console.ReadLine());
             this.sortedList.Remove(key);
+
+            Console.WriteLine("Element Removed Successfully.");
         }
 
         public void ClearList()
@@ -47,9 +50,9 @@ namespace SortedListDemo
         {
             if (this.sortedList.Count != 0)
             {
-                foreach (DictionaryEntry item in sortedList)
+                foreach (KeyValuePair<int,string> item in sortedList)
                 {
-                    Console.WriteLine(item.Key + " : "  + item.Value);
+                    Console.WriteLine(item.Key + " : " + item.Value);
                 }
             }
             else { Console.WriteLine("Dictionary is empty."); }
@@ -71,10 +74,10 @@ namespace SortedListDemo
 
             return choice;
         }
-        public static void NonGeneric()
+        public static void Generic()
         {
-            NonGenericSortedList sl = new NonGenericSortedList();
-            sl.sortedList = new SortedList();
+            GenericSortedList sl = new GenericSortedList();
+            sl.sortedList = new SortedList<int,string>();
 
             int choice = 0;
 
@@ -85,7 +88,7 @@ namespace SortedListDemo
                     case 1:
                         sl.AddElement();
                         break;
-
+                        
                     case 2:
                         sl.RemoveElement();
                         break;
@@ -100,6 +103,5 @@ namespace SortedListDemo
                 }
             }
         }
-
     }
 }
