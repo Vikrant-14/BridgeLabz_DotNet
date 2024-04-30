@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\bin\Debug\net8.0\GenericExample.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\bin\Debug\net8.0\GenericExample.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\bin\Debug\net8.0\GenericExample.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\bin\Debug\net8.0\GenericExample.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\bin\Debug\net8.0\GenericExample.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\obj\Debug\net8.0\GenericExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\obj\Debug\net8.0\GenericExample.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\obj\Debug\net8.0\GenericExample.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\obj\Debug\net8.0\GenericExample.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\obj\Debug\net8.0\GenericExample.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\obj\Debug\net8.0\GenericExample.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\obj\Debug\net8.0\refint\GenericExample.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\obj\Debug\net8.0\GenericExample.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\obj\Debug\net8.0\GenericExample.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\GenericExample\obj\Debug\net8.0\ref\GenericExample.dll
