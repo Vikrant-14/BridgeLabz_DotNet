@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\bin\Debug\net8.0\LamdaExpression.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\bin\Debug\net8.0\LamdaExpression.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\bin\Debug\net8.0\LamdaExpression.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\bin\Debug\net8.0\LamdaExpression.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\bin\Debug\net8.0\LamdaExpression.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\obj\Debug\net8.0\LamdaExpression.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\obj\Debug\net8.0\LamdaExpression.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\obj\Debug\net8.0\LamdaExpression.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\obj\Debug\net8.0\LamdaExpression.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\obj\Debug\net8.0\LamdaExpression.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\obj\Debug\net8.0\LamdaExpression.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\obj\Debug\net8.0\refint\LamdaExpression.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\obj\Debug\net8.0\LamdaExpression.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\obj\Debug\net8.0\LamdaExpression.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\Lamda Expression\LamdaExpression\obj\Debug\net8.0\ref\LamdaExpression.dll
