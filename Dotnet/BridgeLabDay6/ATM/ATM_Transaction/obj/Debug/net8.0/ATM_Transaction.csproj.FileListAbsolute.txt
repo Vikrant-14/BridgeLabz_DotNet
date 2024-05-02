@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\bin\Debug\net8.0\ATM_Transaction.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\bin\Debug\net8.0\ATM_Transaction.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\bin\Debug\net8.0\ATM_Transaction.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\bin\Debug\net8.0\ATM_Transaction.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\bin\Debug\net8.0\ATM_Transaction.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\obj\Debug\net8.0\ATM_Transaction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\obj\Debug\net8.0\ATM_Transaction.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\obj\Debug\net8.0\ATM_Transaction.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\obj\Debug\net8.0\ATM_Transaction.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\obj\Debug\net8.0\ATM_Transaction.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\obj\Debug\net8.0\ATM_Transaction.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\obj\Debug\net8.0\refint\ATM_Transaction.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\obj\Debug\net8.0\ATM_Transaction.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\obj\Debug\net8.0\ATM_Transaction.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay6\ATM\ATM_Transaction\obj\Debug\net8.0\ref\ATM_Transaction.dll
