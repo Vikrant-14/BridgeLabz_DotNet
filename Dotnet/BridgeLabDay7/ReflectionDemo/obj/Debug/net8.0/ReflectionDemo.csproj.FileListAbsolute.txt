@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\bin\Debug\net8.0\ReflectionDemo.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\bin\Debug\net8.0\ReflectionDemo.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\bin\Debug\net8.0\ReflectionDemo.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\bin\Debug\net8.0\ReflectionDemo.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\bin\Debug\net8.0\ReflectionDemo.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\obj\Debug\net8.0\ReflectionDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\obj\Debug\net8.0\ReflectionDemo.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\obj\Debug\net8.0\ReflectionDemo.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\obj\Debug\net8.0\ReflectionDemo.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\obj\Debug\net8.0\ReflectionDemo.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\obj\Debug\net8.0\ReflectionDemo.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\obj\Debug\net8.0\refint\ReflectionDemo.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\obj\Debug\net8.0\ReflectionDemo.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\obj\Debug\net8.0\ReflectionDemo.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\ReflectionDemo\obj\Debug\net8.0\ref\ReflectionDemo.dll
