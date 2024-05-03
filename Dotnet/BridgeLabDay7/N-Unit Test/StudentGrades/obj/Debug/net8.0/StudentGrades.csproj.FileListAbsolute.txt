@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\obj\Debug\net8.0\StudentGrades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\obj\Debug\net8.0\StudentGrades.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\obj\Debug\net8.0\StudentGrades.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\obj\Debug\net8.0\StudentGrades.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\obj\Debug\net8.0\StudentGrades.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\bin\Debug\net8.0\StudentGrades.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\bin\Debug\net8.0\StudentGrades.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\bin\Debug\net8.0\StudentGrades.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\bin\Debug\net8.0\StudentGrades.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\bin\Debug\net8.0\StudentGrades.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\obj\Debug\net8.0\StudentGrades.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\obj\Debug\net8.0\refint\StudentGrades.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\obj\Debug\net8.0\StudentGrades.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\obj\Debug\net8.0\StudentGrades.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay7\N-Unit Test\StudentGrades\obj\Debug\net8.0\ref\StudentGrades.dll
