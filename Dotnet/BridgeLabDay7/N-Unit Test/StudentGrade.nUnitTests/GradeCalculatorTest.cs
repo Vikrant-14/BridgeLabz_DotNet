@@ -32,6 +32,7 @@ namespace StudentGrade.nUnitTests
 
             //Assert
             Assert.AreEqual("A", grade);
+           
         }
 
         [TestCase(91)]

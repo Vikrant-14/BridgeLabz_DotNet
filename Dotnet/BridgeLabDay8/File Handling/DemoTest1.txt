@@ -1,0 +1,138 @@
+File Handling in C#:
+====================
+If you are opening a file , reading and writing content or updating the data of a file and then saving the file; this can be called as file handling.
+
+In C# : System.IO includes all the file handling methods
+operation perform on file in C# : read, write , append
+
+=========================================================
+READ FILE :
+------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FileHandlingDemo
+{
+    internal class filehandlingDemo1
+    {
+        public static void Main()
+        {
+            string filepath = "C:\\Users\\kirti\\Vikrant\\CDAC\\DotNet\\Day_11 13_Jan_24\\fileCreateDemo.txt";
+
+            if(!File.Exists(filepath))
+            {
+                File.Create(filepath);
+                Console.WriteLine("File Created SuccessFully");
+            }
+            else
+            {
+                Console.WriteLine("File Already Exists");
+            }
+
+
+            //Console.WriteLine(File.ReadAllText(filepath));
+
+            string []str = File.ReadAllLines(filepath);
+
+            foreach(var item in str)
+            {
+                Console.WriteLine(item);
+            }
+        }
+    }
+}
+=========================================================
+Write FILE :
+------------
+namespace FileHandlingDemo
+{
+    internal class filehandlingDemo1
+    {
+        public static void Main()
+        {
+            string filepath = "C:\\Users\\kirti\\Vikrant\\CDAC\\DotNet\\Day_11 13_Jan_24\\fileCreateDemo.txt";
+
+            if(!File.Exists(filepath))
+            {
+                File.Create(filepath);
+                Console.WriteLine("File Created SuccessFully");
+            }
+            else
+            {
+                Console.WriteLine("File Already Exists");
+            }
+
+
+            string[] str = { "Hello Everyone" , "Good Afternoon" };
+
+            File.AppendAllLines(filepath, str);
+           
+            Console.WriteLine(File.ReadAllText(filepath));
+        }
+    }
+}
+=========================================================
+Create Directory :
+------------------
+namespace FileHandlingDemo
+{
+    internal class filehandlingDemo1
+    {
+        public static void Main()
+        {
+            string filepath = "C:\\Users\\kirti\\Vikrant\\CDAC\\DotNet\\Day_11 13_Jan_24\\DirectoryCreatedByC#";
+
+            if(!Directory.Exists(filepath))
+            {
+                Directory.CreateDirectory(filepath);
+                Console.WriteLine("Directory Created SuccessFully");
+            }
+            else
+            {
+                Console.WriteLine("Directory Already Exists");
+            }
+
+        }
+    }
+}
+--------------
+ public static void Main3() //Directory Creation
+ {
+     string filepath = "C:\\Users\\kirti\\Vikrant\\CDAC\\DotNet\\Day_11 13_Jan_24\\DirectoryCreatedByC#";
+
+     if (!Directory.Exists(filepath))
+     {
+         Directory.CreateDirectory(filepath);
+         Console.WriteLine("Directory Created SuccessFully");
+     }
+     else
+     {
+         Console.WriteLine("Directory Already Exists");
+     }
+
+     string filepath1 = "C:\\Users\\kirti\\Vikrant\\CDAC\\DotNet\\Day_11 13_Jan_24\\DirectoryCreatedByC#\\demoFile.txt";
+
+     if (!File.Exists(filepath1)){
+         File.Create(filepath1);
+         Console.WriteLine("File Created");
+     }
+     else
+     {
+         Console.WriteLine("File Already Exists");
+     }
+
+     if (File.Exists(filepath1))
+     {
+         string[] strings = { "A", "B", "C", "D" };
+         File.AppendAllLines(filepath1, strings);
+         Console.WriteLine("Data Inserted");
+     }
+     else
+     {
+         Console.WriteLine("File Does Not Exists");
+     }
+ }
+=========================================================
