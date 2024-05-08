@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\bin\Debug\net8.0\StreamDemo.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\bin\Debug\net8.0\StreamDemo.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\bin\Debug\net8.0\StreamDemo.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\bin\Debug\net8.0\StreamDemo.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\bin\Debug\net8.0\StreamDemo.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\obj\Debug\net8.0\StreamDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\obj\Debug\net8.0\StreamDemo.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\obj\Debug\net8.0\StreamDemo.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\obj\Debug\net8.0\StreamDemo.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\obj\Debug\net8.0\StreamDemo.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\obj\Debug\net8.0\StreamDemo.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\obj\Debug\net8.0\refint\StreamDemo.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\obj\Debug\net8.0\StreamDemo.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\obj\Debug\net8.0\StreamDemo.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay8\File Handling\StreamDemo\obj\Debug\net8.0\ref\StreamDemo.dll
