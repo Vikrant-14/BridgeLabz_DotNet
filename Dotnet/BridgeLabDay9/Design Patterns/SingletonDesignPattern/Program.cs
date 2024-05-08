@@ -32,10 +32,10 @@ namespace DesignPattern
         static void Main()
         {
             Singleton obj1 = Singleton.GetInstance();
-            obj1.Display();
+            obj1.Display(); //Instance : 43942917
 
             Singleton obj2 = Singleton.GetInstance();
-            obj2.Display();
+            obj2.Display(); //Instance : 43942917
         }
     }
 }
