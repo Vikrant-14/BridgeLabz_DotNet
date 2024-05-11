@@ -1,0 +1,54 @@
+ADO.NET :
+===========
+ADO.NET --> System.Data
+
+Component of ADO.NET : Data Provider, Connection, Command 
+--------------------------------------
+
+1. SqlConnection : public sealed class SqlConnection
+NameSpace - System.Data.SqlClient
+Inherietance - Object -> DbConnection -> SqlConnection
+Implements - ICloneable
+
+Creating Object Of SqlConnection :
+----------------------------------
+	SqlConnection con = new SqlConnection(cs);
+
+- cs is a string variable which holds connectioon string
+- The connnection string that includes the source database name, and other parameters needed to establish the initial connection
+- The default value is an empty string.
+
+Thing in Connection String
+--------------------------
+Connection String has : 
+1. Data Source (DB Server Name)
+2. Initail Catalog (DB Name)
+3. Integrated Security = True (For Windows Authetication)
+   Integrated Security = False (For Server Authetication)
+4. Username
+5. Password
+
+Example (Connection String):
+----------------------------
+1. Windows Authentication
+"Data Source=MyServerName;Initail Catalog=MyDataBaseName;Integrated Security=true;"
+
+2. SQL Server Authentication
+"Data Source=MyServerName;Initail Catalog=MyDataBaseName;User Id=MyUserName;Password=MyPassword;"
+----
+String cs = "Data Source=MyServerName;Initail Catalog=MyDataBaseName;Integrated Security=true;";
+SqlConnection con = new SqlConnection(cs);
+
+--------------
+When we have to perform an operation on db, we msut havr to open and close the db connection.
+
+1. SqlConnection con = new SqlConnection(cs);
+2. con.Open();
+3. Execute DB queries
+4. con.Close();
+5. At this stage wwe have to use State property of Connection Class
+
+SqlConnection Property:
+-----------------------
+- SqlConnection.ConnectionString{get; set;} Property
+
