@@ -52,3 +52,24 @@ SqlConnection Property:
 -----------------------
 - SqlConnection.ConnectionString{get; set;} Property
 
+===================================================================
+SqlCommand Class : used to store and execute the sql statement
+------------------
+- Sql Command class is used to prepare a Sql statement or StoreProcedure that we want to execute on a Sql Server Database.
+- It is a sealed class means it connot be inherited
+- public sealed class SqlCommand : System.Data.Common.DbCommand, IClonable, IDisposable
+
+- If a .NET application has to retrieve data, then the application needs to
+1. Connect to the database
+2. Prepare an Sql Command
+3. Execute the command
+4. Retrieve the results and display the result 
+
+SqlCommand have five overloaded constructors :
+- SqlCommand();
+- SqlCommand(string cmdText);
+- SqlCommand(string cmdText, SqlConnection connection);
+- SqlCommand(string cmdText, SqlConnection connection, SqlTransaction transaction);
+- SqlCommand(string cmdText, SqlConnection connection, SqlTransaction transaction, SqlCommandColumnEncryptionSetting  columnEncryptionSetting);
+===================================================================
+
