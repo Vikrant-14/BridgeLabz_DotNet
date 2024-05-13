@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ADO.NET2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+993270930fcac4e7c307e61421097be099511d1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+475e3acc95cb0f9f737d5b2276f7ba3b1b48cbc4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ADO.NET2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ADO.NET2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

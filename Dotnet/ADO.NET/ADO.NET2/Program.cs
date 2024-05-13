@@ -13,7 +13,72 @@ namespace ADO.NETExamples
     }
 
     public class Program
-    { 
+    {
+
+        public static void Update1(Customer obj)
+        {
+            string cs = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Test1;User Id=sa;Password=cdac123;";
+            SqlConnection con = null;
+
+            try
+            {
+                using (con = new SqlConnection(cs))
+                {
+                    Console.Write("Enter Name to be updated : ");
+                    string name = Console.ReadLine();
+
+                    string query = "update Customers set name = @CustomerName where email = @CustomerEmail;";
+
+                    SqlCommand cmd = new SqlCommand(query, con);
+
+                    cmd.Parameters.AddWithValue("@CustomerName", name);
+                    cmd.Parameters.AddWithValue("@CustomerEmail", obj.Email);
+
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+
+                    Console.WriteLine("Query Executed");
+                }
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        public static void Update()
+        {
+            string cs = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Test1;User Id=sa;Password=cdac123;";
+            SqlConnection con = null;
+
+            try
+            {
+                using(con = new SqlConnection(cs))
+                {
+                    string query = "update Customers set name = 'Saurav' where Customer_ID = 4;";
+
+                    SqlCommand cmd = new SqlCommand(query, con);
+
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+
+                    Console.WriteLine("Query Executed");
+                }
+            }
+            catch(SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
         public static void GetSingleValue()
         {
             string cs = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Test1;User Id=sa;Password=cdac123;";
@@ -190,8 +255,11 @@ namespace ADO.NETExamples
 
             //Program.Insert2(c2);
 
-            Program.GetSingleValue();
+            //Program.GetSingleValue();
 
+            //Program.Update();
+
+            Program.Update1(c1);
         }
     }
 }
