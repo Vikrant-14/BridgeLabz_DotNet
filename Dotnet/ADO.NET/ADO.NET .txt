@@ -123,6 +123,7 @@ Signature :
 DataSet : It is in-memory representation of the Database.
 ---------
 	- It stored tables & relationships
+	- It stores record of one or more data tables.
 	- It is data provider independence
 	- it is not in the System.Data.SqlClient
 	- it is present in the System.Data
@@ -139,5 +140,19 @@ DataTable :
 	- After defining table schema, we can add rows to the table.
 	- DataTable is a combination of DataColumn and DataRow.
 	- We must include System.Data namespace before creating DataTable.
+
+DataColumn :
+------------
+Properties of DataColumn Class
+1. Caption
+2. DataType
+3. AllowDBNull
+4. MaxLength
+5. PrimaryKey -> Property of DataTable
+6. AutoIncrement
+	- AutoIncrementSeed -> Starting value
+	- AutoIncrementStep -> Incremented value
+7. DefaultValue
+8. Unique
 ===================================================================
 
