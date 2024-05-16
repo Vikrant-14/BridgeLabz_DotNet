@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\bin\Debug\net8.0\SynchronizationUsingMonitor.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\bin\Debug\net8.0\SynchronizationUsingMonitor.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\bin\Debug\net8.0\SynchronizationUsingMonitor.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\bin\Debug\net8.0\SynchronizationUsingMonitor.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\bin\Debug\net8.0\SynchronizationUsingMonitor.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\obj\Debug\net8.0\SynchronizationUsingMonitor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\obj\Debug\net8.0\SynchronizationUsingMonitor.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\obj\Debug\net8.0\SynchronizationUsingMonitor.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\obj\Debug\net8.0\SynchronizationUsingMonitor.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\obj\Debug\net8.0\SynchronizationUsingMonitor.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\obj\Debug\net8.0\SynchronizationUsingMonitor.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\obj\Debug\net8.0\refint\SynchronizationUsingMonitor.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\obj\Debug\net8.0\SynchronizationUsingMonitor.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\obj\Debug\net8.0\SynchronizationUsingMonitor.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\SynchronizationUsingMonitor\obj\Debug\net8.0\ref\SynchronizationUsingMonitor.dll
