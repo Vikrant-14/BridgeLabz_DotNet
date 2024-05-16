@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\bin\Debug\net8.0\TaskUsingFactoryProperty.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\bin\Debug\net8.0\TaskUsingFactoryProperty.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\bin\Debug\net8.0\TaskUsingFactoryProperty.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\bin\Debug\net8.0\TaskUsingFactoryProperty.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\bin\Debug\net8.0\TaskUsingFactoryProperty.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\obj\Debug\net8.0\TaskUsingFactoryProperty.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\obj\Debug\net8.0\TaskUsingFactoryProperty.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\obj\Debug\net8.0\TaskUsingFactoryProperty.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\obj\Debug\net8.0\TaskUsingFactoryProperty.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\obj\Debug\net8.0\TaskUsingFactoryProperty.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\obj\Debug\net8.0\TaskUsingFactoryProperty.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\obj\Debug\net8.0\refint\TaskUsingFactoryProperty.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\obj\Debug\net8.0\TaskUsingFactoryProperty.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\obj\Debug\net8.0\TaskUsingFactoryProperty.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingFactoryProperty\obj\Debug\net8.0\ref\TaskUsingFactoryProperty.dll

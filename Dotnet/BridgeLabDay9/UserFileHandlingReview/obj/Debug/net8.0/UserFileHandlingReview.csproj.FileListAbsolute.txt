@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\obj\Debug\net8.0\UserFileHandlingReview.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\obj\Debug\net8.0\UserFileHandlingReview.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\obj\Debug\net8.0\UserFileHandlingReview.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\obj\Debug\net8.0\UserFileHandlingReview.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\obj\Debug\net8.0\UserFileHandlingReview.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\bin\Debug\net8.0\UserFileHandlingReview.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\bin\Debug\net8.0\UserFileHandlingReview.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\bin\Debug\net8.0\UserFileHandlingReview.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\bin\Debug\net8.0\UserFileHandlingReview.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\bin\Debug\net8.0\UserFileHandlingReview.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\obj\Debug\net8.0\UserFileHandlingReview.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\obj\Debug\net8.0\refint\UserFileHandlingReview.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\obj\Debug\net8.0\UserFileHandlingReview.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\obj\Debug\net8.0\UserFileHandlingReview.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\BridgeLabDay9\UserFileHandlingReview\obj\Debug\net8.0\ref\UserFileHandlingReview.dll

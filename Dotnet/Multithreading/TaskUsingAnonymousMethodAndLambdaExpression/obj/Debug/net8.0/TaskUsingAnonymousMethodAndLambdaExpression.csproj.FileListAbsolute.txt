@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\bin\Debug\net8.0\TaskUsingAnonymousMethodAndLambdaExpression.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\bin\Debug\net8.0\TaskUsingAnonymousMethodAndLambdaExpression.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\bin\Debug\net8.0\TaskUsingAnonymousMethodAndLambdaExpression.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\bin\Debug\net8.0\TaskUsingAnonymousMethodAndLambdaExpression.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\bin\Debug\net8.0\TaskUsingAnonymousMethodAndLambdaExpression.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\obj\Debug\net8.0\TaskUsingAnonymousMethodAndLambdaExpression.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\obj\Debug\net8.0\TaskUsingAnonymousMethodAndLambdaExpression.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\obj\Debug\net8.0\TaskUsingAnonymousMethodAndLambdaExpression.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\obj\Debug\net8.0\TaskUsingAnonymousMethodAndLambdaExpression.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\obj\Debug\net8.0\TaskUsingAnonymousMethodAndLambdaExpression.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\obj\Debug\net8.0\TaskUsingAnonymousMethodAndLambdaExpression.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\obj\Debug\net8.0\refint\TaskUsingAnonymousMethodAndLambdaExpression.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\obj\Debug\net8.0\TaskUsingAnonymousMethodAndLambdaExpression.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\obj\Debug\net8.0\TaskUsingAnonymousMethodAndLambdaExpression.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskUsingAnonymousMethodAndLambdaExpression\obj\Debug\net8.0\ref\TaskUsingAnonymousMethodAndLambdaExpression.dll

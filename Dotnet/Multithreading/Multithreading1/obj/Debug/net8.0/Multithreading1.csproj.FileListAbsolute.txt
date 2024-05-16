@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\bin\Debug\net8.0\Multithreading1.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\bin\Debug\net8.0\Multithreading1.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\bin\Debug\net8.0\Multithreading1.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\bin\Debug\net8.0\Multithreading1.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\bin\Debug\net8.0\Multithreading1.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\obj\Debug\net8.0\Multithreading1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\obj\Debug\net8.0\Multithreading1.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\obj\Debug\net8.0\Multithreading1.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\obj\Debug\net8.0\Multithreading1.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\obj\Debug\net8.0\Multithreading1.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\obj\Debug\net8.0\Multithreading1.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\obj\Debug\net8.0\refint\Multithreading1.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\obj\Debug\net8.0\Multithreading1.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\obj\Debug\net8.0\Multithreading1.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\Multithreading1\obj\Debug\net8.0\ref\Multithreading1.dll
