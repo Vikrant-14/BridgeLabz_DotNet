@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\bin\Debug\net8.0\TaskParallelLibrary2.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\bin\Debug\net8.0\TaskParallelLibrary2.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\bin\Debug\net8.0\TaskParallelLibrary2.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\bin\Debug\net8.0\TaskParallelLibrary2.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\bin\Debug\net8.0\TaskParallelLibrary2.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\obj\Debug\net8.0\TaskParallelLibrary2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\obj\Debug\net8.0\TaskParallelLibrary2.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\obj\Debug\net8.0\TaskParallelLibrary2.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\obj\Debug\net8.0\TaskParallelLibrary2.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\obj\Debug\net8.0\TaskParallelLibrary2.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\obj\Debug\net8.0\TaskParallelLibrary2.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\obj\Debug\net8.0\refint\TaskParallelLibrary2.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\obj\Debug\net8.0\TaskParallelLibrary2.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\obj\Debug\net8.0\TaskParallelLibrary2.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Multithreading\TaskParallelLibrary2\obj\Debug\net8.0\ref\TaskParallelLibrary2.dll
