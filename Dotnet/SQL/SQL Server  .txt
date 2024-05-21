@@ -1,0 +1,66 @@
+SQL Server : https://www.sqlservertutorial.net/
+============
+Data Types in SQL:
+------------------
+i. Exact Numeric Data type : 
+-----------------------------
+1. bit - The bit store one of three values 0, 1, and NULL
+2. int
+3. bigint
+4. smallint
+5. tinyint
+6. decimal
+7. numeric
+8. money
+9. smallmoney
+
+ii. Approximate numeric data types:
+-----------------------------------
+1. float(n) - precision upto 7 digits
+2. real - - precision upto 15 digits
+
+iii. Date & Time data types:
+----------------------------
+1. datatime - 
+	lower range : 1753-01-01
+	Upper range : 9999-12-31
+
+2. smalldatetime - 
+	lower range : 1900-01-01
+	Upper range : 2079-06-06
+
+3. date -
+	lower range : 0001-01-01
+	Upper range : 9999-12-31
+
+4. time -
+	lower range : 00:00:00.0000000
+	Upper range : 23:59:59.9999999
+
+5. datetimeoffset -
+	lower range : 0001-01-01
+	Upper range : 9999-12-31
+
+6. datetime2 -
+	lower range : 0001-01-01
+	Upper range : 9999-12-31
+
+iv. Character strings data types : 
+----------------------------------
+1. char - upperlimit : 8000 characters
+2. varchar - upperlimit : 8000 characters
+3. varchar(max) - 2^31 characters
+4. text - 2,147,483,647 characters
+
+v. Unicode character string data types :
+----------------------------------------
+1. nchar - 4000 characters
+2. nvarchar - 4000 characters
+3. ntext - 1,073,741,823 characters
+
+vi. Binary string data types :
+-------------------------------
+1. binary - 8000 bytes
+2. varbinary - 8000 bytes
+3. image - 2,147,483,647 bytes
+--------------------------------------------------------------

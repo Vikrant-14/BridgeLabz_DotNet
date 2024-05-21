@@ -1,0 +1,6 @@
+SELECT TOP (1000) [Employee_ID]
+      ,[First_name]
+      ,[Last_name]
+      ,[Department]
+      ,[Salary]
+  FROM [Customer_db].[dbo].[Employee]
