@@ -135,3 +135,58 @@ on
 	c.fullname = e.fullname
 where
 	c.id IS NULL OR e.id IS NULL;
+
+
+----------------------------
+-- Full Outer Join Example : 
+----------------------------
+
+create table projects(
+	id int primary key identity,
+	title varchar(255) not null
+);
+
+create table members(
+	id int primary key identity,
+	name varchar(255) not null,
+	project_id int,
+	Foreign key(project_id) references projects(id)
+);
+
+INSERT INTO 
+    projects(title)
+VALUES
+    ('New CRM for Project Sales'),
+    ('ERP Implementation'),
+    ('Develop Mobile Sales Platform');
+
+
+INSERT INTO
+    members(name, project_id)
+VALUES
+    ('John Doe', 1),
+    ('Lily Bush', 1),
+    ('Jane Doe', 2),
+    ('Jack Daniel', null);
+
+select * from projects; 
+select * from members;
+
+select 
+	m.name member,
+	p.title project
+from 
+	members m FULL OUTER JOIN projects p
+on 
+	m.project_id = p.id;
+
+
+select 
+	m.name member,
+	p.title project
+from 
+	members m FULL OUTER JOIN projects p
+on 
+	m.project_id = p.id
+where 
+	m.id IS NULL OR p.id IS NULL;
