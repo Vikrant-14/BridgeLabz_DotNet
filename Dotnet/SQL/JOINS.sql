@@ -190,3 +190,15 @@ on
 	m.project_id = p.id
 where 
 	m.id IS NULL OR p.id IS NULL;
+
+
+----------------------------------------------------------------------------------
+--Cross Join (combine rows from the first table with every row of the second table)
+----------------------------------------------------------------------------------
+
+select 
+	m.name member,
+	p.title project
+from 
+	 projects p CROSS JOIN members m ;
+	 --// projects p , members m ;
