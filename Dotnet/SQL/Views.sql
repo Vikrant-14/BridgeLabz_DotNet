@@ -55,3 +55,12 @@ EXEC sp_rename
 	@newname = 'View1_orderDetails';
 
 select * from View1_orderDetails;
+
+----------------------------------------
+-- View List : 
+----------------------------------------
+Select
+	OBJECT_SCHEMA_NAME(v.object_id) schema_name,
+	v.name
+From
+	sys.views as v;
