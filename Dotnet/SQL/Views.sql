@@ -54,6 +54,7 @@ EXEC sp_rename
 	@objname = 'v1_Orders',
 	@newname = 'View1_orderDetails';
 
+
 select * from View1_orderDetails;
 
 ----------------------------------------
@@ -64,3 +65,19 @@ Select
 	v.name
 From
 	sys.views as v;
+
+
+---------------------------------------------
+-- Get Information About a View in SQL Server
+---------------------------------------------
+--1.
+EXEC sp_helptext 'View1_orderDetails';
+
+
+--2.
+select 
+	OBJECT_DEFINITION(
+		OBJECT_ID(
+			'View1_orderDetails'
+		)
+	) view_info;
