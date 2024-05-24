@@ -158,3 +158,86 @@ EXECUTE find_products  @name = 'c';
 
 Select * from product;
 	
+------------------------------------------------------
+-- Variable :
+--------------
+
+--1. Declaring variable :
+DECLARE @model_year smallint;
+
+-- 2. Assigning value to a variable : 
+SET @model_year = 2020;
+
+SELECT @model_year AS ModelYear;
+
+SELECT 
+	ProductID,
+	Name,
+	price,
+	model_year
+FROM 
+	product
+Where
+	model_year = @model_year;
+
+----------
+
+Declare @product_count int;
+
+Set @product_count = (
+	Select Count(*)
+	From product
+);
+
+SELECT @product_count; -- o/p in results
+PRINT @product_count; -- o/p in messages
+PRINT 'The number of products is ' + CAST(@product_count AS VARCHAR(MAX));
+
+--------------------------------------
+--Selecting a record into variables :
+--------------------------------------
+--1.
+Declare 
+	@product_name varchar(max),
+	@product_price Decimal(10,2);
+
+--2.
+Select 
+	@product_name = name,
+	@product_price = price
+From
+	product
+Where
+	ProductID = 10;
+
+--3.
+SELECT 
+    @product_name AS product_name, 
+    @product_price AS list_price;
+
+----------------------------------------
+-- Accumulating values into a variable :
+----------------------------------------
+CREATE PROCEDURE GETProduct(@model_year smallint)
+AS
+BEGIN
+	DECLARE @product_list varchar(max);
+
+	SET @product_list = '';
+
+	SELECT 
+		@product_list = @product_list + name + char(10)
+	FROM
+		product
+	WHERE
+		model_year = @model_year
+	ORDER BY
+		name
+
+	PRINT @product_list
+END
+
+Select * from product;
+
+EXECUTE GETProduct 2023;
+
