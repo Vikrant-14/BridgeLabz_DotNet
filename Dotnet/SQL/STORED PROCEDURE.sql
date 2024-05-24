@@ -241,3 +241,32 @@ Select * from product;
 
 EXECUTE GETProduct 2023;
 
+--------------------------------------
+--Stored Procedure Output Parameters : 
+--------------------------------------
+
+ALTER PROCEDURE FindProductByModel (
+    @model_year SMALLINT,
+    @product_count INT OUTPUT
+) AS
+BEGIN
+    SELECT 
+        name,
+        price
+    FROM
+        product
+    WHERE
+        model_year = @model_year;
+
+    SELECT @product_count = @@ROWCOUNT;
+END;
+
+----
+
+Declare @count INT;
+
+EXECUTE FindProductByModel
+	@model_year = 2023,
+	@product_count = @count OUTPUT;
+
+Select @count as 'Number of Products Found';
