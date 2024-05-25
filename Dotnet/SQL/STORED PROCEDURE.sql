@@ -270,3 +270,68 @@ EXECUTE FindProductByModel
 	@product_count = @count OUTPUT;
 
 Select @count as 'Number of Products Found';
+
+----------------------
+--IF ELSE:
+----------------------
+--Syntax: 
+---------
+/*
+IF boolean_expression   
+BEGIN
+    { statement_block }
+END
+*/
+
+----------------------
+--WHILE statement :
+----------------------
+--Syntax: 
+---------
+/*
+WHILE Boolean_expression   
+     { sql_statement | statement_block}  
+*/
+
+DECLARE @counter int = 1;
+
+WHILE @counter <= 10
+BEGIN
+	PRINT @counter;
+	SET @counter = @counter + 1;
+END
+
+
+-- BREAK statement : 
+---------------------
+DECLARE @countVariable INT = 0;
+
+WHILE @countVariable <= 10
+BEGIN
+	SET @countVariable = @countVariable + 1;
+	
+	IF @countVariable = 5
+	BEGIN
+		PRINT 'BREAKING STATEMENT';
+		BREAK;
+	END
+
+	PRINT @countVariable;
+END
+
+-- CONTINUE statement : 
+-----------------------
+DECLARE @countVariable1 INT = 0;
+
+WHILE @countVariable1 <= 10
+BEGIN
+	SET @countVariable1 = @countVariable1 + 1;
+	
+	IF @countVariable1 = 5
+	BEGIN
+		PRINT 'CONTINUE STATEMENT';
+		CONTINUE;
+	END
+
+	PRINT @countVariable1;
+END
