@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cmCyyhDXsnM1WF8s9t1+ePaO0pR99MtvkSnSFGwPVehZm/Mo560cV0HVq36UFDIh7Ky+pRJS0zAXY1nhVI4Szg==",
+  "dgSpecHash": "NDGotPG4XNqPAo7FEEnE/WU7D3l9VJBQu/vemmylJ3NBjcSvXFmBDPQ7s2oGFE3JkywnDXFMTCigQgu9fIu3MQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\Entity Framework\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\EntityFramework\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kirti\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\kirti\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

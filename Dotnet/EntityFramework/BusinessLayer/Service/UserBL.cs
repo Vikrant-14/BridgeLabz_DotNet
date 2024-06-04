@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Interface;
 using ModelLayer;
+using RepositoryLayer.CustomException;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interface;
 using System;
@@ -26,7 +27,15 @@ namespace BusinessLayer.Service
 
         public UserEntity UpdateUser(string name, UserML model)
         {
-            return userRL.UpdateUser(name, model);
+            try
+            {
+                return userRL.UpdateUser(name, model);
+            }
+            catch(UserException u)
+            {
+                Console.WriteLine(u.Message);
+                throw;
+            }
         }
 
         public List<UserEntity> GetAllUsers()

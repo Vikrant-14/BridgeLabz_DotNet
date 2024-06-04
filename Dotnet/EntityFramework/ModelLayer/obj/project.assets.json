@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\Entity Framework\\ModelLayer\\ModelLayer.csproj",
+      "projectUniqueName": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\EntityFramework\\ModelLayer\\ModelLayer.csproj",
       "projectName": "ModelLayer",
-      "projectPath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\Entity Framework\\ModelLayer\\ModelLayer.csproj",
+      "projectPath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\EntityFramework\\ModelLayer\\ModelLayer.csproj",
       "packagesPath": "C:\\Users\\kirti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\Entity Framework\\ModelLayer\\obj\\",
+      "outputPath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\EntityFramework\\ModelLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kirti\\AppData\\Roaming\\NuGet\\NuGet.Config",

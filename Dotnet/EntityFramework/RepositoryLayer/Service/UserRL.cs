@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Primitives;
 using ModelLayer;
 using RepositoryLayer.Context;
+using RepositoryLayer.CustomException;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interface;
 using System;
@@ -38,6 +39,10 @@ namespace RepositoryLayer.Service
             {
                 userEntity.Name = model.Name;
                 _context.SaveChanges();
+            }
+            else
+            {
+                throw new UserException("No such user found");
             }
 
             return userEntity;

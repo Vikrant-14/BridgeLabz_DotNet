@@ -1947,11 +1947,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\Entity Framework\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\EntityFramework\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\Entity Framework\\BusinessLayer\\BusinessLayer.csproj",
+      "projectPath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\EntityFramework\\BusinessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\kirti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\Entity Framework\\BusinessLayer\\obj\\",
+      "outputPath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\EntityFramework\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kirti\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1968,8 +1968,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\Entity Framework\\RepositoryLayer\\RepositoryLayer.csproj": {
-              "projectPath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\Entity Framework\\RepositoryLayer\\RepositoryLayer.csproj"
+            "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\EntityFramework\\RepositoryLayer\\RepositoryLayer.csproj": {
+              "projectPath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\EntityFramework\\RepositoryLayer\\RepositoryLayer.csproj"
             }
           }
         }

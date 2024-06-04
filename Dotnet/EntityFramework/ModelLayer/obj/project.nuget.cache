@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yohvo7lQMZHlGRa0d+OA7cD9Bugv6Ou26HIjqbGaQRbHO6CZoQcpVy5FriGeV2gcyHrUwyH/8qNEmFp3mKbm/Q==",
+  "dgSpecHash": "ffhOgPs3fEcHONTv+lQOsqQOiTLldFvglAO7j/gwnfPgNrTSDgnUpWxA9OMBZWy4iTQG1lOT9kUSGQnY02ERLw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\Entity Framework\\ModelLayer\\ModelLayer.csproj",
+  "projectFilePath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\EntityFramework\\ModelLayer\\ModelLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

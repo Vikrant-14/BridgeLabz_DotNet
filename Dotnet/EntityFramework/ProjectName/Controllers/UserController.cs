@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer;
+using RepositoryLayer.CustomException;
 using System.Runtime.CompilerServices;
 
 namespace ProjectName.Controllers
@@ -11,84 +12,128 @@ namespace ProjectName.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserBL userBL;
+        private readonly ResponseML responseML;
 
         public UserController(IUserBL userBL)
         {
             this.userBL = userBL;
+            responseML = new ResponseML();
         }
 
         [HttpPost]
-        public IActionResult AddUser(UserML model)
+        public ResponseML AddUser(UserML model)
         {
-            var result = userBL.AddUser(model);
-
-            if (result != null)
+            try
             {
-                return Ok(result);
+                var result = userBL.AddUser(model);
+
+                if (result != null)
+                {
+                    this.responseML.Success = true;
+                    this.responseML.Message = "User Added Successfully.";
+                    this.responseML.Data = result;
+                }
+                else {
+                    this.responseML.Success = false;
+                    this.responseML.Message = "User Cannot be Added.";
+                    this.responseML.Data = result;
+                }
+
             }
-            else {
-                return BadRequest("Something went wrong!!!");
+            catch (Exception ex)
+            {
+                throw new Exception("Error Occurred while Adding Users");
             }
+
+            return responseML;
         }
 
         [HttpPost("{name}")]
         public IActionResult EditUser(string name, UserML model)
         {
-            var result = userBL.UpdateUser(name, model);
+            try
+            {
+                var result = userBL.UpdateUser(name, model);
 
-            if (result != null)
-            {
-                return Ok(result);
+                if (result != null)
+                {
+                    this.responseML.Success = true;
+                    this.responseML.Message = "User Updated Successfully.";
+                    this.responseML.Data = result;
+
+                    return StatusCode(200, responseML);
+                }
             }
-            else
+            catch(UserException ex)
             {
-                return BadRequest("Something went wrong. Cannot update the result!!!");
+                this.responseML.Success = false;
+                this.responseML.Message = ex.Message;
+                //this.responseML.Data = result;
+                 return StatusCode(404, responseML);
             }
+            return StatusCode(200,this.responseML);
         }
 
         [HttpGet]
-        public IActionResult GetAllUser()
+        public ResponseML GetAllUser()
         {
             var result = userBL.GetAllUsers();
 
             if (result != null)
             {
-                return Ok(result);
+                this.responseML.Success = true;
+                this.responseML.Message = "Getting all users.";
+                this.responseML.Data = result;
             }
             else
             {
-                return BadRequest("NO DATA AVAILABLE");
+                this.responseML.Success = false;
+                this.responseML.Message = "No users!!!";
+                this.responseML.Data = result;
             }
+
+            return responseML;
         }
 
         [HttpGet("{name}")]
-        public IActionResult GetUserByName(string name) 
+        public ResponseML GetUserByName(string name) 
         {
             var result = userBL.GetUserByName(name);
 
             if (result != null)
             {
-                return Ok(result);
+                this.responseML.Success = true;
+                this.responseML.Message = "Get user by Name.";
+                this.responseML.Data = result;
             }
             else
             {
-                return NoContent();
+                this.responseML.Success = false;
+                this.responseML.Message = "No such user found.";
+                this.responseML.Data = result;
             }
+            return responseML;
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteUser(int id)
+        public ResponseML DeleteUser(int id)
         {
             var result = userBL.DeleteUser(id);
 
             if (result != null)
             {
-                return Ok(result);
+                this.responseML.Success = true;
+                this.responseML.Message = "User Deleted Successfully.";
+                this.responseML.Data = result;
             }
             else
             {
-                return BadRequest("No Data Exists To Delete");
+                this.responseML.Success = false;
+                this.responseML.Message = "No user found";
+                this.responseML.Data = result;
             }
+
+            return responseML;
         }
     }
 }

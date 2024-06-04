@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Obw54G2p7X7HHzm5WB4Khva6K0lEA9iG5m2De0ciGKGtpvF0b89xHQLDEZtPLFc1lbmvBAbsfpVvsjjtBc+CHw==",
+  "dgSpecHash": "fWkSrh3MYG/3k1w3TGbX7Y31J8YCznXR9Hq0iSOmM2Gh+5LcQol9V+qHFTaTkUBLj5vDgHfQC8SN0VRVHlne/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\Entity Framework\\ProjectName\\ProjectName.csproj",
+  "projectFilePath": "C:\\Users\\kirti\\Vikrant\\CDAC\\Bridge Labz\\Dotnet\\EntityFramework\\ProjectName\\ProjectName.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kirti\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\kirti\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
