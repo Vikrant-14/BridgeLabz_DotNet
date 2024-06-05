@@ -22,13 +22,21 @@ namespace RepositoryLayer.Service
         }
         public UserEntity AddUser(UserML model)
         {
-            UserEntity userEntity = new UserEntity();   
-            userEntity.Name = model.Name;
+            try
+            {
+                UserEntity userEntity = new UserEntity();   
+                userEntity.Name = model.Name;
 
-            _context.Users.Add(userEntity);
-            _context.SaveChanges();
+                _context.Users.Add(userEntity);
+                _context.SaveChanges();
 
-            return userEntity;
+                return userEntity;
+            }
+            catch(UserException u) 
+            {
+                throw new UserException("Error Occured while Adding User.");
+            }
+
         }
 
         public UserEntity UpdateUser(string name, UserML model)
@@ -52,12 +60,24 @@ namespace RepositoryLayer.Service
         {
             var userEntity = _context.Users.Where( u => u.Name == name).FirstOrDefault();
 
+            if( userEntity == null)
+            {
+                throw new UserException("No such user exists");
+            }
+
             return userEntity;
         }
 
         public List<UserEntity> GetAllUsers()
         {
-            return _context.Users.ToList<UserEntity>();
+            var result =  _context.Users.ToList<UserEntity>();
+
+            if( result == null )
+            {
+                throw new UserException("No Users Exists in the Database");
+            }
+
+            return result;
         }
 
         public UserEntity DeleteUser(int id)
@@ -68,6 +88,9 @@ namespace RepositoryLayer.Service
             {
                 _context.Users.Remove(userEntity);
                 _context.SaveChanges();
+            }
+            else{
+                throw new UserException("No user was found to be deleted");
             }
 
             return userEntity;

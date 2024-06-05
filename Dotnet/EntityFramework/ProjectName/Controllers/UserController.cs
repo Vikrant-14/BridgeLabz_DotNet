@@ -20,8 +20,8 @@ namespace ProjectName.Controllers
             responseML = new ResponseML();
         }
 
-        [HttpPost]
-        public ResponseML AddUser(UserML model)
+        [HttpPost("adduser")]
+        public IActionResult AddUser(UserML model)
         {
             try
             {
@@ -33,22 +33,28 @@ namespace ProjectName.Controllers
                     this.responseML.Message = "User Added Successfully.";
                     this.responseML.Data = result;
                 }
-                else {
+                else
+                {
                     this.responseML.Success = false;
-                    this.responseML.Message = "User Cannot be Added.";
+                    this.responseML.Message = "User cannot be added.";
                     this.responseML.Data = result;
+
+                    return StatusCode(500, responseML);
                 }
 
             }
             catch (Exception ex)
             {
-                throw new Exception("Error Occurred while Adding Users");
+                this.responseML.Success = false;
+                this.responseML.Message = ex.Message;
+
+                return StatusCode(500, responseML);
             }
 
-            return responseML;
+            return StatusCode(201, responseML);
         }
 
-        [HttpPost("{name}")]
+        [HttpPost("updateuser/{name}")]
         public IActionResult EditUser(string name, UserML model)
         {
             try
@@ -61,7 +67,6 @@ namespace ProjectName.Controllers
                     this.responseML.Message = "User Updated Successfully.";
                     this.responseML.Data = result;
 
-                    return StatusCode(200, responseML);
                 }
             }
             catch(UserException ex)
@@ -74,66 +79,80 @@ namespace ProjectName.Controllers
             return StatusCode(200,this.responseML);
         }
 
-        [HttpGet]
-        public ResponseML GetAllUser()
+        [HttpGet("getusers")]
+        public IActionResult GetAllUser()
         {
-            var result = userBL.GetAllUsers();
-
-            if (result != null)
+            try
             {
-                this.responseML.Success = true;
-                this.responseML.Message = "Getting all users.";
-                this.responseML.Data = result;
+                var result = userBL.GetAllUsers();
+
+                if (result != null)
+                {
+                    this.responseML.Success = true;
+                    this.responseML.Message = "Getting all users.";
+                    this.responseML.Data = result;
+                }
             }
-            else
+            catch(UserException ex)
             {
                 this.responseML.Success = false;
-                this.responseML.Message = "No users!!!";
-                this.responseML.Data = result;
-            }
+                this.responseML.Message = ex.Message;
 
-            return responseML;
+                return StatusCode(404, responseML);
+            }
+         
+
+            return StatusCode(200, responseML);
         }
 
-        [HttpGet("{name}")]
-        public ResponseML GetUserByName(string name) 
+        [HttpGet("getuserbyname/{name}")]
+        public IActionResult GetUserByName(string name) 
         {
-            var result = userBL.GetUserByName(name);
-
-            if (result != null)
+            try
             {
-                this.responseML.Success = true;
-                this.responseML.Message = "Get user by Name.";
-                this.responseML.Data = result;
+                var result = userBL.GetUserByName(name);
+
+                if (result != null)
+                {
+                    this.responseML.Success = true;
+                    this.responseML.Message = "Get user by Name.";
+                    this.responseML.Data = result;
+                }
             }
-            else
+            catch (UserException ex)
             {
                 this.responseML.Success = false;
-                this.responseML.Message = "No such user found.";
-                this.responseML.Data = result;
+                this.responseML.Message = ex.Message;
+
+                return StatusCode(404, responseML);
             }
-            return responseML;
+
+            return StatusCode(200, responseML);
         }
 
-        [HttpDelete("{id}")]
-        public ResponseML DeleteUser(int id)
+        [HttpDelete("deleteuser/{id}")]
+        public IActionResult DeleteUser(int id)
         {
-            var result = userBL.DeleteUser(id);
-
-            if (result != null)
+            try
             {
-                this.responseML.Success = true;
-                this.responseML.Message = "User Deleted Successfully.";
-                this.responseML.Data = result;
+                var result = userBL.DeleteUser(id);
+
+                if (result != null)
+                {
+                    this.responseML.Success = true;
+                    this.responseML.Message = "User Deleted Successfully.";
+                    this.responseML.Data = result;
+                }
             }
-            else
+            catch(UserException ex)
             {
                 this.responseML.Success = false;
-                this.responseML.Message = "No user found";
-                this.responseML.Data = result;
+                this.responseML.Message = ex.Message;
+
+                return StatusCode(404, responseML);
             }
 
-            return responseML;
+            return StatusCode(200, responseML);
         }
     }
 }
