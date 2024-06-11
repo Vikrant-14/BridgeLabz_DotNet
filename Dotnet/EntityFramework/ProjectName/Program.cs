@@ -11,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("EFDemo"));
+    //options.UseSqlServer(builder.Environment.Get)
 });
 
 builder.Services.AddScoped<IUserRL, UserRL>();

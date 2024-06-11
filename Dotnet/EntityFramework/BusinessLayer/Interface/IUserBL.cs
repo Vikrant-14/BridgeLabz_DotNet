@@ -15,7 +15,5 @@ namespace BusinessLayer.Interface
             public List<UserEntity> GetAllUsers();
             public UserEntity GetUserByName(string name);
             public UserEntity DeleteUser(int id);
-
-
     }
 }
