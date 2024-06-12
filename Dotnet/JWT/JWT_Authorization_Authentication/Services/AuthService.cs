@@ -17,7 +17,6 @@ namespace JWT_Authorization_Authentication.Services
         {
             _context = context;
             _configuration = configuration;
-
         }
 
         public Role AddRole(Role role)

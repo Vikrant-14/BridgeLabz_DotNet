@@ -19,7 +19,7 @@ namespace JWT_Authorization_Authentication.Controllers
             _employeeService = employeeService;
         }
 
-        [HttpGet("getall")]
+        [HttpGet("getAll")]
         [Authorize(Roles = "User,Admin")]
         public List<Employee> GetEmployees()
         {
