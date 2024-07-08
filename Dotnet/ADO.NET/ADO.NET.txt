@@ -1,0 +1,158 @@
+ADO.NET :
+===========
+ADO.NET --> System.Data
+
+Component of ADO.NET : Data Provider, Connection, Command, ExecuteReader
+--------------------------------------
+
+1. SqlConnection : public sealed class SqlConnection
+NameSpace - System.Data.SqlClient
+Inherietance - Object -> DbConnection -> SqlConnection
+Implements - ICloneable
+
+Creating Object Of SqlConnection :
+----------------------------------
+	SqlConnection con = new SqlConnection(cs);
+
+- cs is a string variable which holds connection string
+- The connnection string that includes the source database name, and other parameters needed to establish the initial connection
+- The default value is an empty string.
+
+Thing in Connection String
+--------------------------
+Connection String has : 
+1. Data Source (DB Server Name)
+2. Initail Catalog (DB Name)
+3. Integrated Security = True (For Windows Authetication)
+   Integrated Security = False (For Server Authetication)
+4. Username
+5. Password
+
+Example (Connection String):
+----------------------------
+1. Windows Authentication
+--------------------------
+"Data Source=MyServerName;Initail Catalog=MyDataBaseName;Integrated Security=true;"
+
+2. SQL Server Authentication
+-----------------------------
+"Data Source=MyServerName;Initail Catalog=MyDataBaseName;User Id=MyUserName;Password=MyPassword;"
+----
+String cs = "Data Source=MyServerName;Initail Catalog=MyDataBaseName;Integrated Security=true;";
+SqlConnection con = new SqlConnection(cs);
+
+--------------
+When we have to perform an operation on db, we msut havr to open and close the db connection.
+
+1. SqlConnection con = new SqlConnection(cs);
+2. con.Open();
+3. Execute DB queries
+4. con.Close();
+5. At this stage wwe have to use State property of Connection Class
+
+SqlConnection Property:
+-----------------------
+- SqlConnection.ConnectionString{get; set;} Property
+
+===================================================================
+SqlCommand Class : used to store and execute the sql statement
+------------------
+- Sql Command class is used to prepare a Sql statement or StoreProcedure that we want to execute on a Sql Server Database.
+- It is a sealed class means it connot be inherited
+- public sealed class SqlCommand : System.Data.Common.DbCommand, IClonable, IDisposable
+
+- If a .NET application has to retrieve data, then the application needs to
+1. Connect to the database
+2. Prepare an Sql Command
+3. Execute the command
+4. Retrieve the results and display the result 
+
+SqlCommand have five overloaded constructors :
+----------------------------------------------
+- SqlCommand();
+- SqlCommand(string cmdText);
+- SqlCommand(string cmdText, SqlConnection connection);
+- SqlCommand(string cmdText, SqlConnection connection, SqlTransaction transaction);
+- SqlCommand(string cmdText, SqlConnection connection, SqlTransaction transaction, SqlCommandColumnEncryptionSetting  columnEncryptionSetting);
+
+Methods : (most commonly used methods)
+---------
+- ExecuteReader() :
+--------------------
+	- if we want read the data from db or select records from the db we can this method.
+Eg. Select statement
+
+- ExecuteNonQuery() :
+---------------------
+	- if we want to insert , update or delete the records from the table then we should go for this method, it returns int(indicating no. of rows affected)
+Eg. insert, update , delete Statement
+		
+- ExecuteScalar() : 
+-------------------
+	- it returns one cell record i.e. Record of first row - first column
+	- mostly used for aggregate function.
+
+===================================================================
+Disconnected Architecture : 
+===========================
+SqlDataAdapter :
+----------------
+	- The SqlDataAdapter class is found in the System.Data.SqlClient namespace
+	- It works as a bridge between DataSet and Database
+	- It opens the datasebase connection, executes the sql statement and close the connection at last. There is no need to open and close the connection. Fill()
+	- The SqlDataAdapter is a class that represents a set of SQL commands and a database connection.
+	- It can be used to fill the dataSet and update the data source.
+	- Both DataSet and DataTable are in-memory data stores, that can store tables, just like database.
+
+Fill() method of SqlDataAdapter -
+-------------------------------
+	- This method does most of ther work behind us.
+	- It opens the connection to the database, executes the sql commands, fills the dataset and datatables with the data, and closes the connection
+	- This methods handles the Opening and closing of the database connections automatically for us.
+	- The connection is kept open only as long as it is needed. That means once the Fill method completes its execution, then the connection closes automatically.
+	- Finally, we are using DataRow class to loop through each record and print the data on the console.
+	- Once the dataset or data table is filled, then no active connection is required to read the data.	
+
+Signature :
+-----------
+	public sealed class SqlDataAdapter : DbDataAdapter, IdbDataAdapter, IDataAdapter, ICloneable
+	{
+
+	}
+
+DataSet : It is in-memory representation of the Database.
+---------
+	- It stored tables & relationships
+	- It stores record of one or more data tables.
+	- It is data provider independence
+	- it is not in the System.Data.SqlClient
+	- it is present in the System.Data
+	- It is common to all Data Provider
+
+DataTable : 
+-----------
+	- DataTable represents relational data into Tabular form.
+	- DataTable in C# is similar to the tables in SQL.
+	- ADO.NET provides a DataTable class to create and use data table independently or we can get data from database table in DataTable.
+	- It can also we used with DataSet also.
+	- Initially, when we create Datatable, it does not have table schema(table structure)
+	- We can create table schema by adding columns and constraints to the tables
+	- After defining table schema, we can add rows to the table.
+	- DataTable is a combination of DataColumn and DataRow.
+	- We must include System.Data namespace before creating DataTable.
+
+DataColumn :
+------------
+Properties of DataColumn Class
+1. Caption
+2. DataType
+3. AllowDBNull
+4. MaxLength
+5. PrimaryKey -> Property of DataTable
+6. AutoIncrement
+	- AutoIncrementSeed -> Starting value
+	- AutoIncrementStep -> Incremented value
+7. DefaultValue
+8. Unique
+===================================================================
+
