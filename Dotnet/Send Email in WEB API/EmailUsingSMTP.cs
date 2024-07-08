@@ -69,14 +69,23 @@ appsettings.json :
 }
 
 ==========================
-forget password :
------------------
+forget password api:
+---------------------
 1. input : user email
 2. find user using email
 3. generate token
 4. Send email including token
 
-reset api : 
-----------
+reset password api : 
+--------------------
 1. find user with the help of token
 1. update new password 
+
+
+http://localhost:4764/api/reset-password/skfjghdfkgjhdfkjg
+
+[HttpPost("{token}")]
+public void reset([FromQuery] string token)
+http://localhost:5264/api/user/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJJZCI6IjEyIiwiRW1haWwiOiJ2aWtyYW50LmcwMTJAZ21haWwuY29tIiwiZXhwIjoxNzE4MjcyNTQ5LCJpc3MiOiJKV1RBdXRoZXRpY2F0aW9uU2VydmVyIiwiYXVkIjoiSldUU2VydmljZVBvc3RtYW5DbGllbnQifQ.a-aYTl8EJRDzQnJzo6b_coCgmNIZ1ZZ76-hFH0houio
+http://localhost:5264/api/user/reset-password/
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJJZCI6IjEyIiwiRW1haWwiOiJ2aWtyYW50LmcwMTJAZ21haWwuY29tIiwiZXhwIjoxNzE4MjczOTM1LCJpc3MiOiJKV1RBdXRoZXRpY2F0aW9uU2VydmVyIiwiYXVkIjoiSldUU2VydmljZVBvc3RtYW5DbGllbnQifQ.aIReYZzL9AA_vERr_ogjP20JPMg4_2mYLnILN6lYzS8
