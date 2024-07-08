@@ -1,0 +1,107 @@
+sample Data For API:
+====================
+A. NOTE 
+---------
+1. /api/note/createnote
+{
+  "title": "Meeting Notes",
+  "description": "Notes from the team meeting held on June 1st, 2024",
+  "isArchived": false,
+  "isTrashed": false
+}
+
+{
+  "title": "Project Plan",
+  "description": "Detailed plan for the upcoming project, including milestones and deadlines",
+  "isArchived": false,
+  "isTrashed": false
+}
+
+{
+  "title": "Shopping List",
+  "description": "List of items to buy for the office: coffee, paper, pens, and snacks",
+  "isArchived": false,
+  "isTrashed": false
+}
+
+2./api/note/updatenote/{id}
+{
+  "title": "Updated Meeting Notes",
+  "description": "Updated notes from the team meeting held on June 1st, 2024",
+  "isArchived": false,
+  "isTrashed": false
+}
+
+{
+  "title": "Revised Project Plan",
+  "description": "Revised plan for the upcoming project with updated milestones and deadlines",
+  "isArchived": false,
+  "isTrashed": false
+}
+
+{
+  "title": "Updated Shopping List",
+  "description": "Updated list of items to buy for the office: coffee, paper, pens, and snacks",
+  "isArchived": false,
+  "isTrashed": false
+}
+
+3./api/note/getallnotes
+4./api/note/getnotebyid/{id}
+5./api/note/archivedpost
+6./api/note/trashedpost
+7./api/note/deletebyid
+
+B. Label
+---------
+1./api/label/create-label
+{
+  "labelName": "Work"
+}
+
+{
+  "labelName": "Personal"
+}
+
+{
+  "labelName": "Urgent"
+}
+
+2./api/label/update-label
+{
+  "labelName": "Important"
+}
+
+{
+  "labelName": "Completed"
+}
+
+{
+  "labelName": "Follow Up"
+}
+
+3./api/label/getById/{id}
+4./api/label/getById/{id}
+5./api/label/deleteById/{id}
+
+C.NoteLabel
+------------
+1./api/NoteLabel/Add-notelabel
+{
+  "noteId": 101,
+  "labelId": 201
+}
+
+{
+  "noteId": 102,
+  "labelId": 202
+}
+
+{
+  "noteId": 103,
+  "labelId": 203
+}
+
+2./api/NoteLabel/getnotebylabel/{LabelID}
+3./api/NoteLabel/getlabelbynote/{NoteID}
+4./api/NoteLabel/delete-notelabel

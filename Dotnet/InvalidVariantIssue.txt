@@ -1,0 +1,2 @@
+open PROJECTNAME.runtimeconfig
+set  "System.Globalization.Invariant": false,
