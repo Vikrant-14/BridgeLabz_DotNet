@@ -1,0 +1,2 @@
+CORS : https://code-maze.com/enabling-cors-in-asp-net-core/ 
+NLog : https://www.reddit.com/r/csharp/comments/x6qony/logging_in_webapi_for_dotnet6_dotnet_core_using/
