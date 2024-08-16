@@ -1,0 +1,162 @@
+STORED Procedures:(E-Insurance App)
+====================================
+
+CREATE OR Alter PROCEDURE CreateInsurancePlan
+    @PlanName NVARCHAR(100),
+    @PlanDetails NVARCHAR(MAX),
+    @CreatedAt DATETIME
+AS
+BEGIN
+    INSERT INTO InsurancePlans (PlanName, PlanDetails, CreatedAt)
+    VALUES (@PlanName, @PlanDetails, @CreatedAt);
+END
+GO
+
+------------------------------------
+
+CREATE OR Alter PROCEDURE GetAllInsurancePlan
+AS
+BEGIN
+   Select * From InsurancePlans;
+END
+GO
+
+--------------------------------------
+
+CREATE OR Alter PROCEDURE GetInsurancePlanById
+	@PlanID int
+AS
+BEGIN
+   Select * From InsurancePlans
+   Where PlanID = @PlanID;
+END
+GO
+
+---------------------------------------
+
+CREATE PROCEDURE UpdateInsurancePlan
+    @PlanID INT,
+    @PlanName NVARCHAR(100),
+    @PlanDetails NVARCHAR(MAX)
+AS
+BEGIN
+    UPDATE InsurancePlans
+    SET PlanName = @PlanName,
+        PlanDetails = @PlanDetails
+    WHERE PlanID = @PlanID;
+END
+GO
+
+---------------------------------------
+
+CREATE PROCEDURE DeleteInsurancePlanById
+    @PlanID INT
+AS
+BEGIN
+    DELETE FROM InsurancePlans
+    WHERE PlanID = @PlanID;
+END
+GO
+
+
+-------------------------------
+CREATE PROCEDURE CreateScheme
+    @SchemeName NVARCHAR(100),
+    @SchemeDetails NVARCHAR(MAX),
+    @SchemePrice FLOAT,
+    @SchemeCover FLOAT,
+    @SchemeTenure INT,
+    @PlanID INT,
+    @CreatedAt DATETIME
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @NewScheme TABLE
+    (
+        SchemeID INT,
+        SchemeName NVARCHAR(100),
+        SchemeDetails NVARCHAR(MAX),
+        SchemePrice FLOAT,
+        SchemeCover FLOAT,
+        SchemeTenure INT,
+        PlanID INT,
+        CreatedAt DATETIME
+    );
+
+    INSERT INTO Schemes (SchemeName, SchemeDetails, SchemePrice, SchemeCover, SchemeTenure, PlanID, CreatedAt)
+    OUTPUT INSERTED.SchemeID, INSERTED.SchemeName, INSERTED.SchemeDetails, INSERTED.SchemePrice, INSERTED.SchemeCover, INSERTED.SchemeTenure, INSERTED.PlanID, INSERTED.CreatedAt
+    INTO @NewScheme
+    VALUES (@SchemeName, @SchemeDetails, @SchemePrice, @SchemeCover, @SchemeTenure, @PlanID, @CreatedAt);
+
+    SELECT * FROM @NewScheme;
+END
+GO
+
+-----------------------------
+
+CREATE PROCEDURE UpdateScheme
+    @SchemeID INT,
+    @SchemeName NVARCHAR(100),
+    @SchemeDetails NVARCHAR(MAX),
+    @SchemePrice FLOAT,
+    @SchemeCover FLOAT,
+    @SchemeTenure INT,
+    @PlanID INT
+AS
+BEGIN
+    UPDATE Schemes
+    SET 
+        SchemeName = @SchemeName,
+        SchemeDetails = @SchemeDetails,
+        SchemePrice = @SchemePrice,
+        SchemeCover = @SchemeCover,
+        SchemeTenure = @SchemeTenure,
+        PlanID = @PlanID
+    WHERE SchemeID = @SchemeID;
+    
+    SELECT *
+    FROM Schemes
+    WHERE SchemeID = @SchemeID;
+END
+GO
+
+----------------------------
+
+CREATE PROCEDURE DeleteScheme
+    @SchemeID INT
+AS
+BEGIN
+    DELETE FROM Schemes
+    WHERE SchemeID = @SchemeID;
+END
+GO
+
+-------------------------------
+
+CREATE or Alter PROCEDURE GetAllSchemesWithInsurancePlans
+AS
+BEGIN
+    SELECT 
+        s.SchemeID,
+        s.SchemeName,
+        s.SchemeDetails,
+        s.SchemePrice,
+        s.SchemeCover,
+        s.SchemeTenure,
+        s.PlanID,
+        s.CreatedAt as SchemeCreatedAt,
+        ip.PlanName,
+        ip.PlanDetails,
+        ip.CreatedAt AS PlanCreatedAt
+    FROM 
+        Schemes s
+    INNER JOIN 
+        InsurancePlans ip ON s.PlanID = ip.PlanID;
+END
+GO
+
+--------------------------------
+
+
+

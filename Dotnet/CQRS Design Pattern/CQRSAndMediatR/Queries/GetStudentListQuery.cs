@@ -3,7 +3,8 @@ using MediatR;
 
 namespace CQRSAndMediatR.Queries
 {
-    public class GetStudentListQuery : IRequest<List<StudentDetails>>
-    {
-    }
+    public record GetStudentListQuery : IRequest<List<StudentDetails>>;
+    //public class GetStudentListQuery : IRequest<List<StudentDetails>>
+    //{
+    //}
 }

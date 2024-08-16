@@ -1,0 +1,8 @@
+Book Store WEB API Application:
+---------------------------------
+
+1. Role-Base Registeration 
+	Role - USER
+		   ADMIN
+2. Login - JWT
+3. Use Stored procedure to store the data in lowercase

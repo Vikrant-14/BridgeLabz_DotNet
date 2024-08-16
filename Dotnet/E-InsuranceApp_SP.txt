@@ -1,0 +1,274 @@
+STORED Procedures:(E-Insurance App)
+====================================
+
+CREATE OR Alter PROCEDURE CreateInsurancePlan
+    @PlanName NVARCHAR(100),
+    @PlanDetails NVARCHAR(MAX),
+    @CreatedAt DATETIME
+AS
+BEGIN
+    INSERT INTO InsurancePlans (PlanName, PlanDetails, CreatedAt)
+    VALUES (@PlanName, @PlanDetails, @CreatedAt);
+END
+GO
+
+------------------------------------
+
+CREATE OR Alter PROCEDURE GetAllInsurancePlan
+AS
+BEGIN
+   Select * From InsurancePlans;
+END
+GO
+
+--------------------------------------
+
+CREATE OR Alter PROCEDURE GetInsurancePlanById
+	@PlanID int
+AS
+BEGIN
+   Select * From InsurancePlans
+   Where PlanID = @PlanID;
+END
+GO
+
+---------------------------------------
+
+CREATE PROCEDURE UpdateInsurancePlan
+    @PlanID INT,
+    @PlanName NVARCHAR(100),
+    @PlanDetails NVARCHAR(MAX)
+AS
+BEGIN
+    UPDATE InsurancePlans
+    SET PlanName = @PlanName,
+        PlanDetails = @PlanDetails
+    WHERE PlanID = @PlanID;
+END
+GO
+
+---------------------------------------
+
+CREATE PROCEDURE DeleteInsurancePlanById
+    @PlanID INT
+AS
+BEGIN
+    DELETE FROM InsurancePlans
+    WHERE PlanID = @PlanID;
+END
+GO
+
+
+-------------------------------
+CREATE PROCEDURE CreateScheme
+    @SchemeName NVARCHAR(100),
+    @SchemeDetails NVARCHAR(MAX),
+    @SchemePrice FLOAT,
+    @SchemeCover FLOAT,
+    @SchemeTenure INT,
+    @PlanID INT,
+    @CreatedAt DATETIME
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @NewScheme TABLE
+    (
+        SchemeID INT,
+        SchemeName NVARCHAR(100),
+        SchemeDetails NVARCHAR(MAX),
+        SchemePrice FLOAT,
+        SchemeCover FLOAT,
+        SchemeTenure INT,
+        PlanID INT,
+        CreatedAt DATETIME
+    );
+
+    INSERT INTO Schemes (SchemeName, SchemeDetails, SchemePrice, SchemeCover, SchemeTenure, PlanID, CreatedAt)
+    OUTPUT INSERTED.SchemeID, INSERTED.SchemeName, INSERTED.SchemeDetails, INSERTED.SchemePrice, INSERTED.SchemeCover, INSERTED.SchemeTenure, INSERTED.PlanID, INSERTED.CreatedAt
+    INTO @NewScheme
+    VALUES (@SchemeName, @SchemeDetails, @SchemePrice, @SchemeCover, @SchemeTenure, @PlanID, @CreatedAt);
+
+    SELECT * FROM @NewScheme;
+END
+GO
+
+-----------------------------
+
+CREATE PROCEDURE UpdateScheme
+    @SchemeID INT,
+    @SchemeName NVARCHAR(100),
+    @SchemeDetails NVARCHAR(MAX),
+    @SchemePrice FLOAT,
+    @SchemeCover FLOAT,
+    @SchemeTenure INT,
+    @PlanID INT
+AS
+BEGIN
+    UPDATE Schemes
+    SET 
+        SchemeName = @SchemeName,
+        SchemeDetails = @SchemeDetails,
+        SchemePrice = @SchemePrice,
+        SchemeCover = @SchemeCover,
+        SchemeTenure = @SchemeTenure,
+        PlanID = @PlanID
+    WHERE SchemeID = @SchemeID;
+    
+    SELECT *
+    FROM Schemes
+    WHERE SchemeID = @SchemeID;
+END
+GO
+
+----------------------------
+
+CREATE PROCEDURE DeleteScheme
+    @SchemeID INT
+AS
+BEGIN
+    DELETE FROM Schemes
+    WHERE SchemeID = @SchemeID;
+END
+GO
+
+-------------------------------
+
+CREATE or Alter PROCEDURE GetAllSchemesWithInsurancePlans
+AS
+BEGIN
+    SELECT 
+        s.SchemeID,
+        s.SchemeName,
+        s.SchemeDetails,
+        s.SchemePrice,
+        s.SchemeCover,
+        s.SchemeTenure,
+        s.PlanID,
+        s.CreatedAt as SchemeCreatedAt,
+        ip.PlanName,
+        ip.PlanDetails,
+        ip.CreatedAt AS PlanCreatedAt
+    FROM 
+        Schemes s
+    INNER JOIN 
+        InsurancePlans ip ON s.PlanID = ip.PlanID;
+END
+GO
+
+--------------------------------
+CREATE OR ALTER PROCEDURE UpdateCommission
+    @AgentID INT,
+    @PolicyID INT,
+    @CommissionAmount FLOAT
+AS
+BEGIN
+    UPDATE Commissions
+    SET CommissionAmount = @CommissionAmount
+    WHERE AgentID = @AgentID AND PolicyID = @PolicyID;
+END
+GO
+
+
+CREATE OR ALTER PROCEDURE ValidatePolicy
+    @CustomerID INT,
+    @SchemeID INT,
+    @PolicyDetails NVARCHAR(MAX),
+    @Premium FLOAT,
+    @DateIssued DATETIME,
+    @MaturityPeriod INT,
+    @PolicyLapseDate DATETIME
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- Example business rule validations
+
+    -- Check if CustomerID exists
+    IF NOT EXISTS (SELECT 1 FROM Customers WHERE CustomerID = @CustomerID)
+    BEGIN
+        -- Raise an error if the customer does not exist
+        RAISERROR('CustomerID does not exist.', 16, 1);
+        RETURN;
+    END
+
+    -- Check if SchemeID exists
+    IF NOT EXISTS (SELECT 1 FROM Schemes WHERE SchemeID = @SchemeID)
+    BEGIN
+        -- Raise an error if the scheme does not exist
+        RAISERROR('SchemeID does not exist.', 16, 1);
+        RETURN;
+    END
+
+    -- Check if Premium is positive
+    IF @Premium <= 0
+    BEGIN
+        -- Raise an error if the premium is not positive
+        RAISERROR('Premium must be greater than zero.', 16, 1);
+        RETURN;
+    END
+
+    -- Check if DateIssued is in the past or today
+    IF @DateIssued > GETDATE()
+    BEGIN
+        -- Raise an error if the DateIssued is in the future
+        RAISERROR('DateIssued cannot be in the future.', 16, 1);
+        RETURN;
+    END
+
+    -- Check if PolicyLapseDate is after DateIssued
+    IF @PolicyLapseDate <= @DateIssued
+    BEGIN
+        -- Raise an error if the PolicyLapseDate is not after DateIssued
+        RAISERROR('PolicyLapseDate must be after DateIssued.', 16, 1);
+        RETURN;
+    END
+END
+GO
+-----------------------------------------------------
+
+CREATE OR ALTER PROCEDURE sp_AddPolicy
+    @CustomerID INT,
+    @SchemeID INT,
+    @PolicyDetails NVARCHAR(MAX),
+    @Premium FLOAT,
+    @DateIssued DATETIME,
+    @MaturityPeriod INT,
+    @PolicyLapseDate DATETIME
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    BEGIN TRY
+        -- Call the stored procedure to validate policy
+        EXEC ValidatePolicy 
+            @CustomerID = @CustomerID,
+            @SchemeID = @SchemeID,
+            @PolicyDetails = @PolicyDetails,
+            @Premium = @Premium,
+            @DateIssued = @DateIssued,
+            @MaturityPeriod = @MaturityPeriod,
+            @PolicyLapseDate = @PolicyLapseDate;
+
+        -- Insert the policy into the PolicyEntity table if validation passes
+        INSERT INTO Policies (CustomerID, SchemeID, PolicyDetails, Premium, DateIssued, MaturityPeriod, PolicyLapseDate, CreatedAt)
+        VALUES (@CustomerID, @SchemeID, @PolicyDetails, @Premium, @DateIssued, @MaturityPeriod, @PolicyLapseDate, GETDATE());
+    END TRY
+    BEGIN CATCH
+        -- Handle the error (e.g., log it or rethrow it)
+        THROW;
+    END CATCH
+END
+GO
+-----------
+CREATE TRIGGER trg_AfterInsertPolicy
+ON Policies
+AFTER INSERT
+AS
+BEGIN
+    INSERT INTO PolicyStatus (PolicyID, Status)
+    SELECT PolicyID, 'Active'
+    FROM inserted;
+END
+
+

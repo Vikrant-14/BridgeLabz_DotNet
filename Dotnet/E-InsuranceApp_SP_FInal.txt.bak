@@ -1,0 +1,638 @@
+select * from Customers;
+select * from Admins;
+select * from Employees;
+select * from InsuranceAgents;
+select * from InsurancePlans;
+select * from Schemes;
+select * from Policies;
+select * from Payments;
+select * from Commissions;
+select * from EmployeeSchemes;
+Select * from PolicyStatus;
+
+
+--------------------------------------------
+
+CREATE OR ALTER PROCEDURE sp_GetAllAdmins
+AS
+BEGIN
+    SELECT * FROM Admins;
+END
+GO
+---------------------------------
+CREATE OR ALTER PROCEDURE sp_GetAdminById
+    @Id INT
+AS
+BEGIN
+    SELECT * FROM Admins WHERE AdminID = @Id;
+END
+GO
+--------------------------------------
+CREATE OR ALTER PROCEDURE sp_DeleteAdminById
+    @Id INT
+AS
+BEGIN
+    Delete FROM Admins WHERE AdminID = @Id;
+END
+GO
+
+-------------------------------------
+CREATE OR ALTER PROCEDURE sp_UpdateAdminById
+    @Id INT,
+    @Username NVARCHAR(50),
+    @Password NVARCHAR(50),
+    @Email NVARCHAR(50),
+    @FullName NVARCHAR(100)
+AS
+BEGIN
+    UPDATE Admins
+    SET 
+        Username = @Username,
+        Password = @Password,
+        Email = @Email,
+        FullName = @FullName
+    WHERE AdminId = @Id;
+END
+GO
+---------------------------------------------------
+CREATE OR ALTER PROCEDURE sp_GetAllCustomers
+AS
+BEGIN
+    SELECT * FROM Customers;
+END
+GO
+----------------------------------------------------
+CREATE OR ALTER PROCEDURE sp_GetCustomerById
+    @Id INT
+AS
+BEGIN
+    SELECT * FROM Customers WHERE CustomerID = @Id;
+END
+GO
+-----------------------------------------------------
+CREATE OR ALTER PROCEDURE sp_DeleteCustomerById
+    @Id INT
+AS
+BEGIN
+    DELETE FROM Customers WHERE CustomerID = @Id;
+END
+GO
+-----------------------------------------------------
+CREATE OR ALTER PROCEDURE sp_UpdateCustomerById
+    @Id INT,
+    @Username NVARCHAR(50),
+    @FullName NVARCHAR(100),
+    @Email NVARCHAR(50),
+    @Password NVARCHAR(50),
+    @Phone NVARCHAR(20),
+    @DateOfBirth DATE,
+    @AgentID INT
+AS
+BEGIN
+    UPDATE Customers
+    SET 
+        Username = @Username,
+        FullName = @FullName,
+        Email = @Email,
+        Password = @Password,
+        Phone = @Phone,
+        DateOfBirth = @DateOfBirth,
+        AgentID = @AgentID
+    WHERE CustomerID = @Id;
+END
+GO
+-----------------------------------------------------------------
+CREATE OR ALTER PROCEDURE spGetAllAgents
+AS
+BEGIN
+    SELECT * FROM InsuranceAgents;
+END
+GO
+------------------------------------------------------
+CREATE OR ALTER PROCEDURE spDeleteAgent
+    @AgentID INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    IF EXISTS (SELECT 1 FROM InsuranceAgents WHERE AgentID = @AgentID)
+    BEGIN
+        DELETE FROM InsuranceAgents WHERE AgentID = @AgentID;
+    END
+    ELSE
+    BEGIN
+        RAISERROR ('Agent doesn''t exist', 16, 1);
+    END
+END
+GO
+--------------------------------------------------------------
+CREATE OR ALTER PROCEDURE spGetAgentById
+    @AgentID INT
+AS
+BEGIN
+    SELECT * FROM InsuranceAgents WHERE AgentID = @AgentID;
+END
+GO
+-------------------------------------------------------------------
+CREATE OR ALTER PROCEDURE spUpdateAgent
+    @AgentID INT,
+    @FullName NVARCHAR(100),
+    @Username NVARCHAR(100),
+    @Email NVARCHAR(100),
+    @Password NVARCHAR(100)
+AS
+BEGIN
+    IF EXISTS (SELECT 1 FROM InsuranceAgents WHERE AgentID = @AgentID)
+    BEGIN
+        UPDATE InsuranceAgents
+        SET FullName = @FullName,
+            Username=@Username,
+            Email = @Email,
+            Password = @Password
+        WHERE AgentID = @AgentID;
+    END
+    ELSE
+    BEGIN
+        RAISERROR ('Agent doesn''t exist', 16, 1);
+    END
+END
+GO
+--------------------------------------------------------------
+CREATE OR ALTER PROCEDURE spGetEmployeeById
+    @EmployeeID INT
+AS
+BEGIN
+    SELECT * FROM Employees WHERE EmployeeID = @EmployeeID;
+END
+GO
+--------------------------------------------------------------
+CREATE OR ALTER PROCEDURE spGetAllEmployees
+AS
+BEGIN
+    SELECT * FROM Employees;
+END
+GO
+---------------------------------------------------------
+CREATE OR ALTER PROCEDURE spDeleteEmployee
+    @EmployeeID INT
+AS
+BEGIN
+    IF EXISTS (SELECT 1 FROM Employees WHERE EmployeeID = @EmployeeID)
+    BEGIN
+        DELETE FROM Employees WHERE EmployeeID = @EmployeeID;
+    END
+END
+GO
+------------------------------------------------------------
+CREATE OR ALTER PROCEDURE spUpdateEmployee
+    @EmployeeID INT,
+    @Username NVARCHAR(100),
+    @Password NVARCHAR(100),
+    @Email NVARCHAR(100),
+    @FullName NVARCHAR(100),
+    @Role NVARCHAR(20)
+AS
+BEGIN
+    IF EXISTS (SELECT 1 FROM Employees WHERE EmployeeID = @EmployeeID)
+    BEGIN
+        UPDATE Employees
+        SET Username = @Username,
+            Password = @Password,
+            Email = @Email,
+            FullName=@FullName,
+            Role=@Role
+        WHERE EmployeeID = @EmployeeID;
+    END
+    ELSE
+    BEGIN
+        RAISERROR ('Employee doesn''t exist', 16, 1);
+    END
+END
+GO
+
+CREATE OR ALTER PROCEDURE CreateInsurancePlan
+    @PlanName NVARCHAR(100),
+    @PlanDetails NVARCHAR(MAX)
+AS
+BEGIN
+    DECLARE @CreatedAt DATETIME;
+    SET @CreatedAt = GETDATE();
+    
+    INSERT INTO InsurancePlans (PlanName, PlanDetails, CreatedAt)
+    VALUES (@PlanName, @PlanDetails, @CreatedAt);
+END
+GO
+------------------------------------
+
+CREATE OR Alter PROCEDURE GetAllInsurancePlan
+AS
+BEGIN
+   Select * From InsurancePlans;
+END
+GO
+
+--------------------------------------
+
+CREATE OR Alter PROCEDURE GetInsurancePlanById
+	@PlanID int
+AS
+BEGIN
+   Select * From InsurancePlans
+   Where PlanID = @PlanID;
+END
+GO
+
+---------------------------------------
+
+CREATE OR ALTER PROCEDURE UpdateInsurancePlan
+    @PlanID INT,
+    @PlanName NVARCHAR(100),
+    @PlanDetails NVARCHAR(MAX)
+AS
+BEGIN
+    UPDATE InsurancePlans
+    SET PlanName = @PlanName,
+        PlanDetails = @PlanDetails
+    WHERE PlanID = @PlanID;
+END
+GO
+
+---------------------------------------
+
+CREATE OR ALTER PROCEDURE DeleteInsurancePlanById
+    @PlanID INT
+AS
+BEGIN
+    DELETE FROM InsurancePlans
+    WHERE PlanID = @PlanID;
+END
+GO
+----------------------------------------------------------------
+CREATE OR ALTER PROCEDURE CreateScheme
+    @SchemeName NVARCHAR(100),
+    @SchemeDetails NVARCHAR(MAX),
+    @SchemePrice FLOAT,
+    @SchemeCover FLOAT,
+    @SchemeTenure INT,
+    @PlanID INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    DECLARE @CreatedAt DATETIME = GETDATE();
+    DECLARE @NewScheme TABLE
+    (
+        SchemeID INT,
+        SchemeName NVARCHAR(100),
+        SchemeDetails NVARCHAR(MAX),
+        SchemePrice FLOAT,
+        SchemeCover FLOAT,
+        SchemeTenure INT,
+        PlanID INT,
+        CreatedAt DATETIME
+    );
+
+    INSERT INTO Schemes (SchemeName, SchemeDetails, SchemePrice, SchemeCover, SchemeTenure, PlanID, CreatedAt)
+    OUTPUT INSERTED.SchemeID, INSERTED.SchemeName, INSERTED.SchemeDetails, INSERTED.SchemePrice, INSERTED.SchemeCover, INSERTED.SchemeTenure, INSERTED.PlanID, INSERTED.CreatedAt
+    INTO @NewScheme
+    VALUES (@SchemeName, @SchemeDetails, @SchemePrice, @SchemeCover, @SchemeTenure, @PlanID, @CreatedAt);
+
+    SELECT * FROM @NewScheme;
+END
+GO
+
+
+-----------------------------
+
+CREATE OR ALTER PROCEDURE UpdateScheme
+    @SchemeID INT,
+    @SchemeName NVARCHAR(100),
+    @SchemeDetails NVARCHAR(MAX),
+    @SchemePrice FLOAT,
+    @SchemeCover FLOAT,
+    @SchemeTenure INT,
+    @PlanID INT
+AS
+BEGIN
+    UPDATE Schemes
+    SET 
+        SchemeName = @SchemeName,
+        SchemeDetails = @SchemeDetails,
+        SchemePrice = @SchemePrice,
+        SchemeCover = @SchemeCover,
+        SchemeTenure = @SchemeTenure,
+        PlanID = @PlanID
+    WHERE SchemeID = @SchemeID;
+    
+    SELECT *
+    FROM Schemes
+    WHERE SchemeID = @SchemeID;
+END
+GO
+
+----------------------------
+
+CREATE OR ALTER PROCEDURE DeleteScheme
+    @SchemeID INT
+AS
+BEGIN
+    DELETE FROM Schemes
+    WHERE SchemeID = @SchemeID;
+END
+GO
+
+-------------------------------
+
+CREATE or Alter PROCEDURE GetAllSchemesWithInsurancePlans
+AS
+BEGIN
+    SELECT 
+        s.SchemeID,
+        s.SchemeName,
+        s.SchemeDetails,
+        s.SchemePrice,
+        s.SchemeCover,
+        s.SchemeTenure,
+        s.PlanID,
+        s.CreatedAt as SchemeCreatedAt,
+        ip.PlanName,
+        ip.PlanDetails,
+        ip.CreatedAt AS PlanCreatedAt
+    FROM 
+        Schemes s
+    INNER JOIN 
+        InsurancePlans ip ON s.PlanID = ip.PlanID;
+END
+GO
+-----------------------------------------------------
+
+CREATE OR ALTER PROCEDURE ValidatePolicy
+    @CustomerID INT,
+    @SchemeID INT,
+    @PolicyDetails NVARCHAR(MAX),
+    @Premium FLOAT,
+    @DateIssued DATETIME,
+    @MaturityPeriod INT,
+    @PolicyLapseDate DATETIME
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- Example business rule validations
+
+    -- Check if CustomerID exists
+    IF NOT EXISTS (SELECT 1 FROM Customers WHERE CustomerID = @CustomerID)
+    BEGIN
+        -- Raise an error if the customer does not exist
+        RAISERROR('CustomerID does not exist.', 16, 1);
+        RETURN;
+    END
+
+    -- Check if SchemeID exists
+    IF NOT EXISTS (SELECT 1 FROM Schemes WHERE SchemeID = @SchemeID)
+    BEGIN
+        -- Raise an error if the scheme does not exist
+        RAISERROR('SchemeID does not exist.', 16, 1);
+        RETURN;
+    END
+
+    -- Check if Premium is positive
+    IF @Premium <= 0
+    BEGIN
+        -- Raise an error if the premium is not positive
+        RAISERROR('Premium must be greater than zero.', 16, 1);
+        RETURN;
+    END
+
+    -- Check if DateIssued is in the past or today
+    IF @DateIssued > GETDATE()
+    BEGIN
+        -- Raise an error if the DateIssued is in the future
+        RAISERROR('DateIssued cannot be in the future.', 16, 1);
+        RETURN;
+    END
+
+    -- Check if PolicyLapseDate is after DateIssued
+    IF @PolicyLapseDate <= @DateIssued
+    BEGIN
+        -- Raise an error if the PolicyLapseDate is not after DateIssued
+        RAISERROR('PolicyLapseDate must be after DateIssued.', 16, 1);
+        RETURN;
+    END
+END
+GO
+-----------------------------------------------------------
+CREATE OR ALTER PROCEDURE sp_AddPolicy
+    @CustomerID INT,
+    @SchemeID INT,
+    @PolicyDetails NVARCHAR(MAX),
+    @Premium FLOAT,
+    @DateIssued DATETIME,
+    @MaturityPeriod INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @PolicyLapseDate DATETIME;
+    SET @PolicyLapseDate = DATEADD(year, @MaturityPeriod, @DateIssued);
+
+    BEGIN TRY
+        -- Call the stored procedure to validate policy
+        EXEC ValidatePolicy 
+            @CustomerID = @CustomerID,
+            @SchemeID = @SchemeID,
+            @PolicyDetails = @PolicyDetails,
+            @Premium = @Premium,
+            @DateIssued = @DateIssued,
+            @MaturityPeriod = @MaturityPeriod,
+            @PolicyLapseDate = @PolicyLapseDate;
+
+        -- Insert the policy into the PolicyEntity table if validation passes
+        INSERT INTO Policies (CustomerID, SchemeID, PolicyDetails, Premium, DateIssued, MaturityPeriod, PolicyLapseDate, CreatedAt)
+        VALUES (@CustomerID, @SchemeID, @PolicyDetails, @Premium, @DateIssued, @MaturityPeriod, @PolicyLapseDate, GETDATE());
+    END TRY
+    BEGIN CATCH
+        -- Handle the error (e.g., log it or rethrow it)
+        THROW;
+    END CATCH
+END
+GO
+
+-----------
+CREATE Or Alter TRIGGER trg_AfterInsertPolicy
+ON Policies
+AFTER INSERT
+AS
+BEGIN
+    INSERT INTO PolicyStatus (PolicyID, Status)
+    SELECT PolicyID, 'Active'
+    FROM inserted;
+END
+GO
+
+
+-------------------------------------------
+
+CREATE OR ALTER PROCEDURE sp_GetAllPolicies
+    @CustomerID INT
+AS
+BEGIN
+    SELECT 
+        p.PolicyID,
+        p.CustomerID,
+        p.SchemeID,
+        p.PolicyDetails,
+        p.Premium,
+        p.DateIssued,
+        p.MaturityPeriod,
+        p.PolicyLapseDate,
+        p.CreatedAt,
+        ps.Status
+    FROM Policies p
+    INNER JOIN PolicyStatus ps ON p.PolicyID = ps.PolicyID
+    WHERE p.CustomerID = @CustomerID
+END
+GO
+--------------------------------------------------
+CREATE OR ALTER PROCEDURE sp_GetPolicyById
+    @Id INT
+AS
+BEGIN
+    SELECT 
+        p.PolicyID,
+        p.CustomerID,
+        p.SchemeID,
+        p.PolicyDetails,
+        p.Premium,
+        p.DateIssued,
+        p.MaturityPeriod,
+        p.PolicyLapseDate,
+        p.CreatedAt,
+        ps.Status
+    FROM Policies p
+    INNER JOIN PolicyStatus ps ON p.PolicyID = ps.PolicyID
+    WHERE p.PolicyID = @Id
+END
+GO
+----------------------------------------------------------------
+
+CREATE OR ALTER PROCEDURE sp_UpdatePolicyById
+    @PolicyID INT,
+    @CustomerID INT,
+    @SchemeID INT,
+    @PolicyDetails NVARCHAR(MAX),
+    @Premium FLOAT,
+    @DateIssued DATETIME,
+    @MaturityPeriod INT,
+    @PolicyLapseDate DATETIME
+AS
+BEGIN
+    UPDATE Policies
+    SET CustomerID = @CustomerID,
+        SchemeID = @SchemeID,
+        PolicyDetails = @PolicyDetails,
+        Premium = @Premium,
+        DateIssued = @DateIssued,
+        MaturityPeriod = @MaturityPeriod,
+        PolicyLapseDate = @PolicyLapseDate
+    WHERE PolicyID = @PolicyID
+END
+GO
+
+
+CREATE OR ALTER PROCEDURE sp_DeletePolicyById
+    @Id INT
+AS
+BEGIN
+    Update PolicyStatus set Status='Inactive'
+    Where PolicyID = @Id;
+END
+GO
+
+
+
+
+------------------------------------------
+CREATE OR ALTER PROCEDURE AddCommission
+    @AgentID INT,
+    @PolicyID INT
+AS
+BEGIN
+    DECLARE @CommissionAmount FLOAT;
+    DECLARE @SchemePrice FLOAT;
+    DECLARE @CreatedAt DATETIME;
+
+    SET @CreatedAt = GETDATE();
+
+    -- Fetch the scheme price based on the PolicyID
+    SELECT @SchemePrice = s.SchemePrice
+    FROM Policies p
+    INNER JOIN Schemes s ON p.SchemeID = s.SchemeID
+    WHERE p.PolicyID = @PolicyID;
+
+    -- Calculate the commission amount as 5% of the scheme price
+    SET @CommissionAmount = 0.05 * @SchemePrice;
+
+    -- Insert the commission details into the Commissions table
+    INSERT INTO Commissions (AgentID, PolicyID, CommissionAmount, CreatedAt)
+    VALUES (@AgentID, @PolicyID, @CommissionAmount, @CreatedAt);
+END
+GO
+
+
+--------------------------
+
+CREATE OR ALTER PROCEDURE UpdateCommission
+    @AgentID INT,
+    @PolicyID INT,
+    @CommissionPercentage FLOAT
+AS
+BEGIN
+    DECLARE @SchemePrice FLOAT;
+    DECLARE @NewCommissionAmount FLOAT;
+
+    -- Fetch the scheme price based on the PolicyID
+    SELECT @SchemePrice = s.SchemePrice
+    FROM Policies p
+    INNER JOIN Schemes s ON p.SchemeID = s.SchemeID
+    WHERE p.PolicyID = @PolicyID;
+
+    -- Calculate the new commission amount based on the user-defined percentage
+    SET @NewCommissionAmount = @CommissionPercentage/100 * @SchemePrice;
+
+    -- Update the commission amount in the Commissions table
+    UPDATE Commissions
+    SET CommissionAmount = @NewCommissionAmount
+    WHERE AgentID = @AgentID AND PolicyID = @PolicyID;
+END
+
+-------------------------------
+CREATE PROCEDURE DeleteCommission
+    @AgentID INT,
+    @PolicyID INT
+AS
+BEGIN
+    DELETE FROM Commissions
+    WHERE AgentID = @AgentID AND PolicyID = @PolicyID;
+END
+GO
+
+---------------------------------
+
+CREATE PROCEDURE GetAllCommissions
+AS
+BEGIN
+    SELECT * FROM Commissions;
+END
+GO
+
+--------------------------------------
+
+CREATE PROCEDURE GetCommissionById
+    @AgentID INT,
+    @PolicyID INT
+AS
+BEGIN
+    SELECT * FROM Commissions
+    WHERE AgentID = @AgentID AND PolicyID = @PolicyID;
+END
+

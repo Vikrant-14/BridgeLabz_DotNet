@@ -1,0 +1,15 @@
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\bin\Debug\net6.0\Review.exe
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\bin\Debug\net6.0\Review.deps.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\bin\Debug\net6.0\Review.runtimeconfig.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\bin\Debug\net6.0\Review.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\bin\Debug\net6.0\Review.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\obj\Debug\net6.0\Review.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\obj\Debug\net6.0\Review.AssemblyInfoInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\obj\Debug\net6.0\Review.AssemblyInfo.cs
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\obj\Debug\net6.0\Review.csproj.CoreCompileInputs.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\obj\Debug\net6.0\Review.sourcelink.json
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\obj\Debug\net6.0\Review.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\obj\Debug\net6.0\refint\Review.dll
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\obj\Debug\net6.0\Review.pdb
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\obj\Debug\net6.0\Review.genruntimeconfig.cache
+C:\Users\kirti\Vikrant\CDAC\Bridge Labz\Dotnet\Review\Review\obj\Debug\net6.0\ref\Review.dll
